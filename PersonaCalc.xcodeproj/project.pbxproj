@@ -22,6 +22,12 @@
 		967A53B9257D867C004C6174 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53B5257D867C004C6174 /* Users+CoreDataClass.swift */; };
 		967A53BA257D867C004C6174 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53B6257D867C004C6174 /* Users+CoreDataProperties.swift */; };
 		967A53BD257D87E8004C6174 /* LoginControllerWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53BC257D87E8004C6174 /* LoginControllerWireFrame.swift */; };
+		967A53C1257D94DE004C6174 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53C0257D94DE004C6174 /* LoginPresenter.swift */; };
+		967A53C5257D9B22004C6174 /* TabRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A53C4257D9B22004C6174 /* TabRoot.storyboard */; };
+		967A53CC257D9D02004C6174 /* InventarioViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A53CB257D9D02004C6174 /* InventarioViewController.storyboard */; };
+		967A53CF257D9D5C004C6174 /* PersonaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A53CE257D9D5C004C6174 /* PersonaViewController.storyboard */; };
+		967A53D2257D9D6E004C6174 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A53D1257D9D6D004C6174 /* ProfileViewController.storyboard */; };
+		967A53D5257D9EA8004C6174 /* TabRootWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53D4257D9EA8004C6174 /* TabRootWireFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +49,12 @@
 		967A53B5257D867C004C6174 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataClass.swift"; path = "DBEntites/Users+CoreDataClass.swift"; sourceTree = "<group>"; };
 		967A53B6257D867C004C6174 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataProperties.swift"; path = "DBEntites/Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		967A53BC257D87E8004C6174 /* LoginControllerWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerWireFrame.swift; sourceTree = "<group>"; };
+		967A53C0257D94DE004C6174 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		967A53C4257D9B22004C6174 /* TabRoot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabRoot.storyboard; sourceTree = "<group>"; };
+		967A53CB257D9D02004C6174 /* InventarioViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InventarioViewController.storyboard; sourceTree = "<group>"; };
+		967A53CE257D9D5C004C6174 /* PersonaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonaViewController.storyboard; sourceTree = "<group>"; };
+		967A53D1257D9D6D004C6174 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		967A53D4257D9EA8004C6174 /* TabRootWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRootWireFrame.swift; sourceTree = "<group>"; };
 		DF9ABC732A2264DEA9223F36 /* Pods-PersonaCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaCalc.release.xcconfig"; path = "Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +128,7 @@
 		967A538E257D7706004C6174 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				967A53C3257D9B04004C6174 /* Tabs */,
 				967A539D257D8059004C6174 /* LoginViewController.storyboard */,
 			);
 			name = Views;
@@ -124,6 +137,7 @@
 		967A538F257D7711004C6174 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				967A53C0257D94DE004C6174 /* LoginPresenter.swift */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -132,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				967A53BC257D87E8004C6174 /* LoginControllerWireFrame.swift */,
+				967A53D4257D9EA8004C6174 /* TabRootWireFrame.swift */,
 			);
 			name = WireFrames;
 			sourceTree = "<group>";
@@ -168,6 +183,17 @@
 			children = (
 			);
 			name = Delegates;
+			sourceTree = "<group>";
+		};
+		967A53C3257D9B04004C6174 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				967A53C4257D9B22004C6174 /* TabRoot.storyboard */,
+				967A53CB257D9D02004C6174 /* InventarioViewController.storyboard */,
+				967A53CE257D9D5C004C6174 /* PersonaViewController.storyboard */,
+				967A53D1257D9D6D004C6174 /* ProfileViewController.storyboard */,
+			);
+			name = Tabs;
 			sourceTree = "<group>";
 		};
 		CF062C73DEA2A09341E34971 /* Pods */ = {
@@ -238,9 +264,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967A53CF257D9D5C004C6174 /* PersonaViewController.storyboard in Resources */,
+				967A53C5257D9B22004C6174 /* TabRoot.storyboard in Resources */,
 				965911E6257362DA00179388 /* LaunchScreen.storyboard in Resources */,
 				965911E3257362DA00179388 /* Assets.xcassets in Resources */,
 				965911DE257362D900179388 /* Main.storyboard in Resources */,
+				967A53CC257D9D02004C6174 /* InventarioViewController.storyboard in Resources */,
+				967A53D2257D9D6E004C6174 /* ProfileViewController.storyboard in Resources */,
 				967A539E257D8059004C6174 /* LoginViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,8 +326,10 @@
 			files = (
 				967A53B7257D867C004C6174 /* Persona+CoreDataClass.swift in Sources */,
 				967A53BA257D867C004C6174 /* Users+CoreDataProperties.swift in Sources */,
+				967A53D5257D9EA8004C6174 /* TabRootWireFrame.swift in Sources */,
 				965911DB257362D900179388 /* ViewController.swift in Sources */,
 				967A53B9257D867C004C6174 /* Users+CoreDataClass.swift in Sources */,
+				967A53C1257D94DE004C6174 /* LoginPresenter.swift in Sources */,
 				967A53B8257D867C004C6174 /* Persona+CoreDataProperties.swift in Sources */,
 				965911D7257362D900179388 /* AppDelegate.swift in Sources */,
 				965911D9257362D900179388 /* SceneDelegate.swift in Sources */,
