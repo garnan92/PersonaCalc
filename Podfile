@@ -6,5 +6,8 @@ target 'PersonaCalc' do
   use_frameworks!
 
   # Pods for PersonaCalc
+  pod "TextFieldFloatingPlaceholder"
+  pod 'Alamofire', '~> 5.2'
+  pod 'SDWebImage', '~> 5.0'
 
 end

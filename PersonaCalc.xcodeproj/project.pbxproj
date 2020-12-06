@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		965911E1257362D900179388 /* PersonaCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 965911DF257362D900179388 /* PersonaCalc.xcdatamodeld */; };
 		965911E3257362DA00179388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965911E2257362DA00179388 /* Assets.xcassets */; };
 		965911E6257362DA00179388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965911E4257362DA00179388 /* LaunchScreen.storyboard */; };
+		967A539E257D8059004C6174 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A539D257D8059004C6174 /* LoginViewController.storyboard */; };
+		967A53A7257D846A004C6174 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53A6257D846A004C6174 /* LoginViewController.swift */; };
+		967A53B7257D867C004C6174 /* Persona+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53B3257D867C004C6174 /* Persona+CoreDataClass.swift */; };
+		967A53B8257D867C004C6174 /* Persona+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53B4257D867C004C6174 /* Persona+CoreDataProperties.swift */; };
+		967A53B9257D867C004C6174 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53B5257D867C004C6174 /* Users+CoreDataClass.swift */; };
+		967A53BA257D867C004C6174 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53B6257D867C004C6174 /* Users+CoreDataProperties.swift */; };
+		967A53BD257D87E8004C6174 /* LoginControllerWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53BC257D87E8004C6174 /* LoginControllerWireFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,13 @@
 		965911E2257362DA00179388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		965911E5257362DA00179388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		965911E7257362DA00179388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		967A539D257D8059004C6174 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		967A53A6257D846A004C6174 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		967A53B3257D867C004C6174 /* Persona+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Persona+CoreDataClass.swift"; path = "DBEntites/Persona+CoreDataClass.swift"; sourceTree = "<group>"; };
+		967A53B4257D867C004C6174 /* Persona+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Persona+CoreDataProperties.swift"; path = "DBEntites/Persona+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		967A53B5257D867C004C6174 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataClass.swift"; path = "DBEntites/Users+CoreDataClass.swift"; sourceTree = "<group>"; };
+		967A53B6257D867C004C6174 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataProperties.swift"; path = "DBEntites/Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		967A53BC257D87E8004C6174 /* LoginControllerWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerWireFrame.swift; sourceTree = "<group>"; };
 		DF9ABC732A2264DEA9223F36 /* Pods-PersonaCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaCalc.release.xcconfig"; path = "Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,16 +87,79 @@
 		965911D5257362D900179388 /* PersonaCalc */ = {
 			isa = PBXGroup;
 			children = (
+				965911E7257362DA00179388 /* Info.plist */,
 				965911D6257362D900179388 /* AppDelegate.swift */,
 				965911D8257362D900179388 /* SceneDelegate.swift */,
 				965911DA257362D900179388 /* ViewController.swift */,
-				965911DC257362D900179388 /* Main.storyboard */,
 				965911E2257362DA00179388 /* Assets.xcassets */,
 				965911E4257362DA00179388 /* LaunchScreen.storyboard */,
-				965911E7257362DA00179388 /* Info.plist */,
-				965911DF257362D900179388 /* PersonaCalc.xcdatamodeld */,
+				965911DC257362D900179388 /* Main.storyboard */,
+				967A538D257D76F3004C6174 /* Models */,
+				967A538F257D7711004C6174 /* Presenters */,
+				967A5391257D7722004C6174 /* ViewControllers */,
+				967A538E257D7706004C6174 /* Views */,
+				967A5390257D7719004C6174 /* WireFrames */,
 			);
 			path = PersonaCalc;
+			sourceTree = "<group>";
+		};
+		967A538D257D76F3004C6174 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				967A5393257D7D75004C6174 /* Entities */,
+				967A5392257D774B004C6174 /* CoreData */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		967A538E257D7706004C6174 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				967A539D257D8059004C6174 /* LoginViewController.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		967A538F257D7711004C6174 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		967A5390257D7719004C6174 /* WireFrames */ = {
+			isa = PBXGroup;
+			children = (
+				967A53BC257D87E8004C6174 /* LoginControllerWireFrame.swift */,
+			);
+			name = WireFrames;
+			sourceTree = "<group>";
+		};
+		967A5391257D7722004C6174 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				967A53A6257D846A004C6174 /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		967A5392257D774B004C6174 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				965911DF257362D900179388 /* PersonaCalc.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		967A5393257D7D75004C6174 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				967A53B3257D867C004C6174 /* Persona+CoreDataClass.swift */,
+				967A53B4257D867C004C6174 /* Persona+CoreDataProperties.swift */,
+				967A53B5257D867C004C6174 /* Users+CoreDataClass.swift */,
+				967A53B6257D867C004C6174 /* Users+CoreDataProperties.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 		CF062C73DEA2A09341E34971 /* Pods */ = {
@@ -91,7 +168,6 @@
 				4DC9166BB2522F393CC9C1AE /* Pods-PersonaCalc.debug.xcconfig */,
 				DF9ABC732A2264DEA9223F36 /* Pods-PersonaCalc.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -106,6 +182,7 @@
 				965911CF257362D900179388 /* Sources */,
 				965911D0257362D900179388 /* Frameworks */,
 				965911D1257362D900179388 /* Resources */,
+				5D31F1615C0E1885003122D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +233,7 @@
 				965911E6257362DA00179388 /* LaunchScreen.storyboard in Resources */,
 				965911E3257362DA00179388 /* Assets.xcassets in Resources */,
 				965911DE257362D900179388 /* Main.storyboard in Resources */,
+				967A539E257D8059004C6174 /* LoginViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +262,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5D31F1615C0E1885003122D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,9 +286,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967A53B7257D867C004C6174 /* Persona+CoreDataClass.swift in Sources */,
+				967A53BA257D867C004C6174 /* Users+CoreDataProperties.swift in Sources */,
 				965911DB257362D900179388 /* ViewController.swift in Sources */,
+				967A53B9257D867C004C6174 /* Users+CoreDataClass.swift in Sources */,
+				967A53B8257D867C004C6174 /* Persona+CoreDataProperties.swift in Sources */,
 				965911D7257362D900179388 /* AppDelegate.swift in Sources */,
 				965911D9257362D900179388 /* SceneDelegate.swift in Sources */,
+				967A53A7257D846A004C6174 /* LoginViewController.swift in Sources */,
+				967A53BD257D87E8004C6174 /* LoginControllerWireFrame.swift in Sources */,
 				965911E1257362D900179388 /* PersonaCalc.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

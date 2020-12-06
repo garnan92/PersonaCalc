@@ -1,3 +1,26 @@
-PODFILE CHECKSUM: c6f98bdf7d7f9343de94fbf401a89cda5a5ae20e
+PODS:
+  - Alamofire (5.3.0)
+  - SDWebImage (5.9.5):
+    - SDWebImage/Core (= 5.9.5)
+  - SDWebImage/Core (5.9.5)
+  - TextFieldFloatingPlaceholder (1.1.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - SDWebImage (~> 5.0)
+  - TextFieldFloatingPlaceholder
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SDWebImage
+    - TextFieldFloatingPlaceholder
+
+SPEC CHECKSUMS:
+  Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
+  SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
+  TextFieldFloatingPlaceholder: b203efe694d94d86f03bb2de65613ba6c8ba5464
+
+PODFILE CHECKSUM: 193ed0f78867735b02d6b34f236a09a9cc7408c8
 
 COCOAPODS: 1.10.0
