@@ -92,6 +92,7 @@
 				965911D8257362D900179388 /* SceneDelegate.swift */,
 				965911DA257362D900179388 /* ViewController.swift */,
 				965911E2257362DA00179388 /* Assets.xcassets */,
+				967A53BF257D9438004C6174 /* Delegates */,
 				965911E4257362DA00179388 /* LaunchScreen.storyboard */,
 				965911DC257362D900179388 /* Main.storyboard */,
 				967A538D257D76F3004C6174 /* Models */,
@@ -160,6 +161,13 @@
 				967A53B6257D867C004C6174 /* Users+CoreDataProperties.swift */,
 			);
 			name = Entities;
+			sourceTree = "<group>";
+		};
+		967A53BF257D9438004C6174 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 		CF062C73DEA2A09341E34971 /* Pods */ = {

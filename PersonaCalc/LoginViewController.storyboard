@@ -53,13 +53,22 @@
                                         <color key="tintColor" red="0.103178747" green="0.10317315909999999" blue="0.1019607843" alpha="0.93474422089999998" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Entrar"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft6-2X-C3a">
+                                        <rect key="frame" x="171.5" y="320" width="71" height="30"/>
+                                        <state key="normal" title="Registarte">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Dh0-eQ-YGl" firstAttribute="leading" secondItem="ERe-Tm-ynA" secondAttribute="leading" id="0tl-eh-sfR"/>
+                                    <constraint firstItem="Ft6-2X-C3a" firstAttribute="centerX" secondItem="DKA-ah-lac" secondAttribute="centerX" id="6uP-Rg-KAq"/>
                                     <constraint firstAttribute="trailing" secondItem="ERe-Tm-ynA" secondAttribute="trailing" constant="50" id="7WF-2s-tnO"/>
+                                    <constraint firstItem="dEf-PM-qZT" firstAttribute="top" secondItem="Ft6-2X-C3a" secondAttribute="bottom" constant="8" symbolic="YES" id="E2c-gK-vU0"/>
                                     <constraint firstItem="ERe-Tm-ynA" firstAttribute="leading" secondItem="DKA-ah-lac" secondAttribute="leading" constant="50" id="LMd-HK-6ZK"/>
                                     <constraint firstItem="Dh0-eQ-YGl" firstAttribute="top" secondItem="ERe-Tm-ynA" secondAttribute="bottom" constant="50" id="LcU-SV-BCO"/>
+                                    <constraint firstItem="Ft6-2X-C3a" firstAttribute="top" secondItem="Dh0-eQ-YGl" secondAttribute="bottom" constant="12" id="P3f-S2-eLK"/>
                                     <constraint firstItem="dEf-PM-qZT" firstAttribute="top" secondItem="Dh0-eQ-YGl" secondAttribute="bottom" constant="50" id="PPb-DG-xk8"/>
                                     <constraint firstItem="ERe-Tm-ynA" firstAttribute="top" secondItem="Afn-V2-PIv" secondAttribute="bottom" constant="80" id="Px7-a0-Ndd"/>
                                     <constraint firstItem="Afn-V2-PIv" firstAttribute="centerX" secondItem="DKA-ah-lac" secondAttribute="centerX" id="TOI-wd-pfy"/>
