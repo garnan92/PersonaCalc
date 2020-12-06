@@ -28,6 +28,8 @@
 		967A53CF257D9D5C004C6174 /* PersonaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A53CE257D9D5C004C6174 /* PersonaViewController.storyboard */; };
 		967A53D2257D9D6E004C6174 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A53D1257D9D6D004C6174 /* ProfileViewController.storyboard */; };
 		967A53D5257D9EA8004C6174 /* TabRootWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53D4257D9EA8004C6174 /* TabRootWireFrame.swift */; };
+		967A53DB257DA289004C6174 /* PersonaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 967A53DA257DA289004C6174 /* PersonaTableViewCell.xib */; };
+		967A53DE257DA2BE004C6174 /* PersonaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53DD257DA2BE004C6174 /* PersonaTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		967A53CE257D9D5C004C6174 /* PersonaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonaViewController.storyboard; sourceTree = "<group>"; };
 		967A53D1257D9D6D004C6174 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
 		967A53D4257D9EA8004C6174 /* TabRootWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRootWireFrame.swift; sourceTree = "<group>"; };
+		967A53DA257DA289004C6174 /* PersonaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonaTableViewCell.xib; sourceTree = "<group>"; };
+		967A53DD257DA2BE004C6174 /* PersonaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonaTableViewCell.swift; sourceTree = "<group>"; };
 		DF9ABC732A2264DEA9223F36 /* Pods-PersonaCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaCalc.release.xcconfig"; path = "Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +132,7 @@
 		967A538E257D7706004C6174 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				967A53D9257DA276004C6174 /* Componentes */,
 				967A53C3257D9B04004C6174 /* Tabs */,
 				967A539D257D8059004C6174 /* LoginViewController.storyboard */,
 			);
@@ -154,6 +159,7 @@
 		967A5391257D7722004C6174 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				967A53E0257DA2D6004C6174 /* Componentes */,
 				967A53A6257D846A004C6174 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
@@ -194,6 +200,22 @@
 				967A53D1257D9D6D004C6174 /* ProfileViewController.storyboard */,
 			);
 			name = Tabs;
+			sourceTree = "<group>";
+		};
+		967A53D9257DA276004C6174 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				967A53DA257DA289004C6174 /* PersonaTableViewCell.xib */,
+			);
+			name = Componentes;
+			sourceTree = "<group>";
+		};
+		967A53E0257DA2D6004C6174 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				967A53DD257DA2BE004C6174 /* PersonaTableViewCell.swift */,
+			);
+			name = Componentes;
 			sourceTree = "<group>";
 		};
 		CF062C73DEA2A09341E34971 /* Pods */ = {
@@ -268,6 +290,7 @@
 				967A53C5257D9B22004C6174 /* TabRoot.storyboard in Resources */,
 				965911E6257362DA00179388 /* LaunchScreen.storyboard in Resources */,
 				965911E3257362DA00179388 /* Assets.xcassets in Resources */,
+				967A53DB257DA289004C6174 /* PersonaTableViewCell.xib in Resources */,
 				965911DE257362D900179388 /* Main.storyboard in Resources */,
 				967A53CC257D9D02004C6174 /* InventarioViewController.storyboard in Resources */,
 				967A53D2257D9D6E004C6174 /* ProfileViewController.storyboard in Resources */,
@@ -324,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967A53DE257DA2BE004C6174 /* PersonaTableViewCell.swift in Sources */,
 				967A53B7257D867C004C6174 /* Persona+CoreDataClass.swift in Sources */,
 				967A53BA257D867C004C6174 /* Users+CoreDataProperties.swift in Sources */,
 				967A53D5257D9EA8004C6174 /* TabRootWireFrame.swift in Sources */,
