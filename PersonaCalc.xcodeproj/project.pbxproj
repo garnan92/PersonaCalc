@@ -38,6 +38,9 @@
 		969CB2B1257DCCC800A2AA0F /* PersonaIdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969CB2B0257DCCC800A2AA0F /* PersonaIdViewController.xib */; };
 		969CB2B3257DD67100A2AA0F /* FusionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969CB2B2257DD67100A2AA0F /* FusionViewCell.xib */; };
 		969CB2B5257DD77A00A2AA0F /* FusionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2B4257DD77A00A2AA0F /* FusionViewCell.swift */; };
+		969CB2B7257DD98200A2AA0F /* PersonaIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2B6257DD98200A2AA0F /* PersonaIdViewController.swift */; };
+		969CB2BA257DDFEC00A2AA0F /* PersonaIdPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2B9257DDFEC00A2AA0F /* PersonaIdPresenter.swift */; };
+		969CB2BD257DE08E00A2AA0F /* PersonaIdDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2BC257DE08E00A2AA0F /* PersonaIdDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +91,9 @@
 		969CB2B0257DCCC800A2AA0F /* PersonaIdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonaIdViewController.xib; sourceTree = "<group>"; };
 		969CB2B2257DD67100A2AA0F /* FusionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FusionViewCell.xib; sourceTree = "<group>"; };
 		969CB2B4257DD77A00A2AA0F /* FusionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FusionViewCell.swift; sourceTree = "<group>"; };
+		969CB2B6257DD98200A2AA0F /* PersonaIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaIdViewController.swift; sourceTree = "<group>"; };
+		969CB2B9257DDFEC00A2AA0F /* PersonaIdPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaIdPresenter.swift; sourceTree = "<group>"; };
+		969CB2BC257DE08E00A2AA0F /* PersonaIdDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaIdDelegate.swift; sourceTree = "<group>"; };
 		DF9ABC732A2264DEA9223F36 /* Pods-PersonaCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaCalc.release.xcconfig"; path = "Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +180,7 @@
 		967A538F257D7711004C6174 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				969CB2B8257DDFDA00A2AA0F /* Componentes */,
 				967A53E8257DA92A004C6174 /* Tabs */,
 				967A53C0257D94DE004C6174 /* LoginPresenter.swift */,
 			);
@@ -221,6 +228,7 @@
 		967A53BF257D9438004C6174 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				969CB2BB257DE01C00A2AA0F /* Componentes */,
 				967A53E9257DA930004C6174 /* Tabs */,
 			);
 			name = Delegates;
@@ -252,6 +260,7 @@
 			children = (
 				967A53DD257DA2BE004C6174 /* PersonaTableViewCell.swift */,
 				969CB2B4257DD77A00A2AA0F /* FusionViewCell.swift */,
+				969CB2B6257DD98200A2AA0F /* PersonaIdViewController.swift */,
 			);
 			name = Componentes;
 			sourceTree = "<group>";
@@ -283,6 +292,22 @@
 		967A5414257DBE6C004C6174 /* Componentes */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			name = Componentes;
+			sourceTree = "<group>";
+		};
+		969CB2B8257DDFDA00A2AA0F /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				969CB2B9257DDFEC00A2AA0F /* PersonaIdPresenter.swift */,
+			);
+			name = Componentes;
+			sourceTree = "<group>";
+		};
+		969CB2BB257DE01C00A2AA0F /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				969CB2BC257DE08E00A2AA0F /* PersonaIdDelegate.swift */,
 			);
 			name = Componentes;
 			sourceTree = "<group>";
@@ -429,12 +454,15 @@
 				967A53B9257D867C004C6174 /* Users+CoreDataClass.swift in Sources */,
 				967A53C1257D94DE004C6174 /* LoginPresenter.swift in Sources */,
 				967A53B8257D867C004C6174 /* Persona+CoreDataProperties.swift in Sources */,
+				969CB2BD257DE08E00A2AA0F /* PersonaIdDelegate.swift in Sources */,
 				965911D7257362D900179388 /* AppDelegate.swift in Sources */,
 				965911D9257362D900179388 /* SceneDelegate.swift in Sources */,
 				967A53EE257DAD71004C6174 /* PersonaPresenter.swift in Sources */,
 				967A53A7257D846A004C6174 /* LoginViewController.swift in Sources */,
 				967A53EB257DAAB7004C6174 /* PersonaViewController.swift in Sources */,
+				969CB2BA257DDFEC00A2AA0F /* PersonaIdPresenter.swift in Sources */,
 				967A53BD257D87E8004C6174 /* LoginControllerWireFrame.swift in Sources */,
+				969CB2B7257DD98200A2AA0F /* PersonaIdViewController.swift in Sources */,
 				965911E1257362D900179388 /* PersonaCalc.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

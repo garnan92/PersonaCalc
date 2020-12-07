@@ -53,7 +53,15 @@ extension PersonaViewController : UITableViewDelegate , UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let personaView : PersonaIdViewController = PersonaIdViewController(nibName: "PersonaIdViewController", bundle: nil)
+        
+        personaView.id = items[indexPath.row].id
+        
+        self.navigationController?.pushViewController(personaView, animated: true)
+        
+    }
     
 }
 
