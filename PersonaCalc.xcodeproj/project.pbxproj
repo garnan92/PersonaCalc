@@ -33,7 +33,23 @@
 		967A53EB257DAAB7004C6174 /* PersonaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53EA257DAAB7004C6174 /* PersonaViewController.swift */; };
 		967A53EE257DAD71004C6174 /* PersonaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53ED257DAD71004C6174 /* PersonaPresenter.swift */; };
 		967A53F1257DAD93004C6174 /* PersonaDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53F0257DAD93004C6174 /* PersonaDelegate.swift */; };
+		967A540D257DAFD5004C6174 /* PersonaList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967A540C257DAFD5004C6174 /* PersonaList.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		967A540E257DAFD5004C6174 /* PersonaList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 967A540C257DAFD5004C6174 /* PersonaList.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		967A540F257DAFD6004C6174 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				967A540E257DAFD5004C6174 /* PersonaList.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0468E0C62E1DF827F175AA8C /* Pods_PersonaCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonaCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +81,7 @@
 		967A53EA257DAAB7004C6174 /* PersonaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaViewController.swift; sourceTree = "<group>"; };
 		967A53ED257DAD71004C6174 /* PersonaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaPresenter.swift; sourceTree = "<group>"; };
 		967A53F0257DAD93004C6174 /* PersonaDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaDelegate.swift; sourceTree = "<group>"; };
+		967A540C257DAFD5004C6174 /* PersonaList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersonaList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9ABC732A2264DEA9223F36 /* Pods-PersonaCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaCalc.release.xcconfig"; path = "Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78C4E7E12DAAC14A4C376AC9 /* Pods_PersonaCalc.framework in Frameworks */,
+				967A540D257DAFD5004C6174 /* PersonaList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,7 @@
 		2E74731344C1A6ECA510ED2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				967A540C257DAFD5004C6174 /* PersonaList.framework */,
 				0468E0C62E1DF827F175AA8C /* Pods_PersonaCalc.framework */,
 			);
 			name = Frameworks;
@@ -129,6 +148,7 @@
 		967A538D257D76F3004C6174 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				967A5414257DBE6C004C6174 /* Componentes */,
 				967A5393257D7D75004C6174 /* Entities */,
 				967A5392257D774B004C6174 /* CoreData */,
 			);
@@ -251,6 +271,13 @@
 			name = Tabs;
 			sourceTree = "<group>";
 		};
+		967A5414257DBE6C004C6174 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Componentes;
+			sourceTree = "<group>";
+		};
 		CF062C73DEA2A09341E34971 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +299,7 @@
 				965911D0257362D900179388 /* Frameworks */,
 				965911D1257362D900179388 /* Resources */,
 				5D31F1615C0E1885003122D0 /* [CP] Embed Pods Frameworks */,
+				967A540F257DAFD6004C6174 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

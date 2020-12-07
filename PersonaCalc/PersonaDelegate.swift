@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import UIKit
+import PersonaList
 
-protocol PersonaDelegate {
-    func LoadData(_ items: String)
+protocol PersonaDelegate: NSObjectProtocol  {
+    func LoadData(_ items: PersonaList)
 }
