@@ -25,6 +25,7 @@ class PersonaViewController : UIViewController {
         personaPresenter.registerCell(exTable)
         exTable.delegate = self
         exTable.dataSource = self
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

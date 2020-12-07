@@ -66,6 +66,9 @@ class PersonaIdViewController : UIViewController {
         exTable.dataSource = self
         exTable.delegate = self
         personaIdPresenter.registerCell(exTable)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(aggregar))
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,6 +76,10 @@ class PersonaIdViewController : UIViewController {
         personaIdPresenter.LoadRestData(id!)
         personaIdPresenter.LoadResistanceData(id!)
         personaIdPresenter.LoadFusionData(id!)
+    }
+    
+    @objc func aggregar() {
+        print("persona agregado")
     }
     
 }
