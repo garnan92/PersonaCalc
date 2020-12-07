@@ -30,6 +30,9 @@
 		967A53D5257D9EA8004C6174 /* TabRootWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53D4257D9EA8004C6174 /* TabRootWireFrame.swift */; };
 		967A53DB257DA289004C6174 /* PersonaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 967A53DA257DA289004C6174 /* PersonaTableViewCell.xib */; };
 		967A53DE257DA2BE004C6174 /* PersonaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53DD257DA2BE004C6174 /* PersonaTableViewCell.swift */; };
+		967A53EB257DAAB7004C6174 /* PersonaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53EA257DAAB7004C6174 /* PersonaViewController.swift */; };
+		967A53EE257DAD71004C6174 /* PersonaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53ED257DAD71004C6174 /* PersonaPresenter.swift */; };
+		967A53F1257DAD93004C6174 /* PersonaDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53F0257DAD93004C6174 /* PersonaDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,9 @@
 		967A53D4257D9EA8004C6174 /* TabRootWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRootWireFrame.swift; sourceTree = "<group>"; };
 		967A53DA257DA289004C6174 /* PersonaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonaTableViewCell.xib; sourceTree = "<group>"; };
 		967A53DD257DA2BE004C6174 /* PersonaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonaTableViewCell.swift; sourceTree = "<group>"; };
+		967A53EA257DAAB7004C6174 /* PersonaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaViewController.swift; sourceTree = "<group>"; };
+		967A53ED257DAD71004C6174 /* PersonaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaPresenter.swift; sourceTree = "<group>"; };
+		967A53F0257DAD93004C6174 /* PersonaDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaDelegate.swift; sourceTree = "<group>"; };
 		DF9ABC732A2264DEA9223F36 /* Pods-PersonaCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaCalc.release.xcconfig"; path = "Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +148,7 @@
 		967A538F257D7711004C6174 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				967A53E8257DA92A004C6174 /* Tabs */,
 				967A53C0257D94DE004C6174 /* LoginPresenter.swift */,
 			);
 			name = Presenters;
@@ -159,6 +166,7 @@
 		967A5391257D7722004C6174 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				967A53E7257DA880004C6174 /* Tabs */,
 				967A53E0257DA2D6004C6174 /* Componentes */,
 				967A53A6257D846A004C6174 /* LoginViewController.swift */,
 			);
@@ -187,6 +195,7 @@
 		967A53BF257D9438004C6174 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				967A53E9257DA930004C6174 /* Tabs */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -216,6 +225,30 @@
 				967A53DD257DA2BE004C6174 /* PersonaTableViewCell.swift */,
 			);
 			name = Componentes;
+			sourceTree = "<group>";
+		};
+		967A53E7257DA880004C6174 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				967A53EA257DAAB7004C6174 /* PersonaViewController.swift */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		967A53E8257DA92A004C6174 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				967A53ED257DAD71004C6174 /* PersonaPresenter.swift */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		967A53E9257DA930004C6174 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				967A53F0257DAD93004C6174 /* PersonaDelegate.swift */,
+			);
+			name = Tabs;
 			sourceTree = "<group>";
 		};
 		CF062C73DEA2A09341E34971 /* Pods */ = {
@@ -350,6 +383,7 @@
 				967A53DE257DA2BE004C6174 /* PersonaTableViewCell.swift in Sources */,
 				967A53B7257D867C004C6174 /* Persona+CoreDataClass.swift in Sources */,
 				967A53BA257D867C004C6174 /* Users+CoreDataProperties.swift in Sources */,
+				967A53F1257DAD93004C6174 /* PersonaDelegate.swift in Sources */,
 				967A53D5257D9EA8004C6174 /* TabRootWireFrame.swift in Sources */,
 				965911DB257362D900179388 /* ViewController.swift in Sources */,
 				967A53B9257D867C004C6174 /* Users+CoreDataClass.swift in Sources */,
@@ -357,7 +391,9 @@
 				967A53B8257D867C004C6174 /* Persona+CoreDataProperties.swift in Sources */,
 				965911D7257362D900179388 /* AppDelegate.swift in Sources */,
 				965911D9257362D900179388 /* SceneDelegate.swift in Sources */,
+				967A53EE257DAD71004C6174 /* PersonaPresenter.swift in Sources */,
 				967A53A7257D846A004C6174 /* LoginViewController.swift in Sources */,
+				967A53EB257DAAB7004C6174 /* PersonaViewController.swift in Sources */,
 				967A53BD257D87E8004C6174 /* LoginControllerWireFrame.swift in Sources */,
 				965911E1257362D900179388 /* PersonaCalc.xcdatamodeld in Sources */,
 			);
