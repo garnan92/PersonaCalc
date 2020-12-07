@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+import PersonaId
 
 class PersonaIdPresenter {
     

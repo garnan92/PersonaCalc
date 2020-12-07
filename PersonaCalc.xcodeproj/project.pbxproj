@@ -41,6 +41,7 @@
 		969CB2B7257DD98200A2AA0F /* PersonaIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2B6257DD98200A2AA0F /* PersonaIdViewController.swift */; };
 		969CB2BA257DDFEC00A2AA0F /* PersonaIdPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2B9257DDFEC00A2AA0F /* PersonaIdPresenter.swift */; };
 		969CB2BD257DE08E00A2AA0F /* PersonaIdDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2BC257DE08E00A2AA0F /* PersonaIdDelegate.swift */; };
+		969CB2D8257DE20B00A2AA0F /* PersonaId.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969CB2D7257DE20B00A2AA0F /* PersonaId.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -94,6 +95,7 @@
 		969CB2B6257DD98200A2AA0F /* PersonaIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaIdViewController.swift; sourceTree = "<group>"; };
 		969CB2B9257DDFEC00A2AA0F /* PersonaIdPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaIdPresenter.swift; sourceTree = "<group>"; };
 		969CB2BC257DE08E00A2AA0F /* PersonaIdDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaIdDelegate.swift; sourceTree = "<group>"; };
+		969CB2D7257DE20B00A2AA0F /* PersonaId.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersonaId.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9ABC732A2264DEA9223F36 /* Pods-PersonaCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaCalc.release.xcconfig"; path = "Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969CB2D8257DE20B00A2AA0F /* PersonaId.framework in Frameworks */,
 				78C4E7E12DAAC14A4C376AC9 /* Pods_PersonaCalc.framework in Frameworks */,
 				967A540D257DAFD5004C6174 /* PersonaList.framework in Frameworks */,
 			);
@@ -113,6 +116,7 @@
 		2E74731344C1A6ECA510ED2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				969CB2D7257DE20B00A2AA0F /* PersonaId.framework */,
 				967A540C257DAFD5004C6174 /* PersonaList.framework */,
 				0468E0C62E1DF827F175AA8C /* Pods_PersonaCalc.framework */,
 			);
