@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78C4E7E12DAAC14A4C376AC9 /* Pods_PersonaCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0468E0C62E1DF827F175AA8C /* Pods_PersonaCalc.framework */; };
+		9625AF4D257DF7C100880DEF /* PersonaFusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9625AF4C257DF7C100880DEF /* PersonaFusion.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		965911D7257362D900179388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911D6257362D900179388 /* AppDelegate.swift */; };
 		965911D9257362D900179388 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911D8257362D900179388 /* SceneDelegate.swift */; };
 		965911DB257362D900179388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911DA257362D900179388 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 /* Begin PBXFileReference section */
 		0468E0C62E1DF827F175AA8C /* Pods_PersonaCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonaCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC9166BB2522F393CC9C1AE /* Pods-PersonaCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaCalc.debug.xcconfig"; path = "Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		9625AF4C257DF7C100880DEF /* PersonaFusion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersonaFusion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		965911D3257362D900179388 /* PersonaCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965911D6257362D900179388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		965911D8257362D900179388 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9625AF4D257DF7C100880DEF /* PersonaFusion.framework in Frameworks */,
 				969CB2F3257DEE7700A2AA0F /* PersonaResistance.framework in Frameworks */,
 				969CB2D8257DE20B00A2AA0F /* PersonaId.framework in Frameworks */,
 				78C4E7E12DAAC14A4C376AC9 /* Pods_PersonaCalc.framework in Frameworks */,
@@ -119,6 +122,7 @@
 		2E74731344C1A6ECA510ED2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9625AF4C257DF7C100880DEF /* PersonaFusion.framework */,
 				969CB2F2257DEE7700A2AA0F /* PersonaResistance.framework */,
 				969CB2D7257DE20B00A2AA0F /* PersonaId.framework */,
 				967A540C257DAFD5004C6174 /* PersonaList.framework */,

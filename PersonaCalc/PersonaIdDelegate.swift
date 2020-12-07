@@ -8,6 +8,7 @@
 import Foundation
 import PersonaId
 import PersonaResistance
+import PersonaFusion
 
 protocol PersonaIdDelegate : NSObjectProtocol {
     
@@ -17,5 +18,5 @@ protocol PersonaIdDelegate : NSObjectProtocol {
     func LoadRace(_ race: Game)
     func LoadInherit(_ inherit : Game)
     func LoadResistance(_ resistance: PersonaResistance)
-    func LoadFusiones(_ fusiones: [Fusione])
+    func LoadFusiones(_ fusiones: PersonaFusion)
 }

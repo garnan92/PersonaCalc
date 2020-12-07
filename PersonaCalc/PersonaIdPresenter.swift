@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import PersonaId
 import PersonaResistance
+import PersonaFusion
 import Alamofire
 
 class PersonaIdPresenter {
@@ -75,6 +76,36 @@ class PersonaIdPresenter {
             
         }
         
+    }
+    
+    func LoadFusionData(_ id: Int) {
+        guard let uri : URL = URL(string: "http://localhost:8000/persona/\(id)/fusiones") else {
+            return
+        }
+        
+        AF.request(uri,method: .get,encoding: JSONEncoding.default).responseJSON { response in
+                        
+            switch response.result {
+            case .success(_):
+                
+                guard let data = String(data: response.data!,encoding: .utf8) else {
+                    return
+                }
+                
+                let personaFusion = try! PersonaFusion(data)
+                
+                self.personaIdDelegate?.LoadFusiones(personaFusion)
+                
+            case .failure(_):
+                print("error al procesar datos")
+            }
+            
+        }
+    }
+    
+    func registerCell(_ exTable : UITableView){
+        let NibCell  = UINib(nibName: "FusionViewCell", bundle: nil)
+        exTable.register(NibCell, forCellReuseIdentifier: FusionViewCell.CellID)
     }
     
 }

@@ -9,12 +9,13 @@ import Foundation
 import UIKit
 import PersonaId
 import PersonaResistance
+import PersonaFusion
 import SDWebImage
 
 class PersonaIdViewController : UIViewController {
     
     var id : Int?
-    var fusiones : [Fusione] = []
+    var fusiones : PersonaFusion = []
     
     var personaIdPresenter : PersonaIdPresenter = PersonaIdPresenter()
     
@@ -62,13 +63,36 @@ class PersonaIdViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         personaIdPresenter.setDelegate(self)
+        exTable.dataSource = self
+        exTable.delegate = self
+        personaIdPresenter.registerCell(exTable)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         personaIdPresenter.LoadRestData(id!)
         personaIdPresenter.LoadResistanceData(id!)
+        personaIdPresenter.LoadFusionData(id!)
     }
+    
+}
+
+extension PersonaIdViewController : UITableViewDelegate , UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.fusiones.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : FusionViewCell = exTable.dequeueReusableCell(withIdentifier: FusionViewCell.CellID, for: indexPath) as! FusionViewCell
+        
+        cell.ingrediente1Label.text = fusiones[indexPath.row].persona1?.nombre
+        cell.ingrediente2Label.text = fusiones[indexPath.row].persona2?.nombre
+        
+        return cell
+        
+    }
+    
     
 }
 
@@ -129,12 +153,9 @@ extension PersonaIdViewController : PersonaIdDelegate {
         
     }
     
-    func LoadFusiones(_ fusiones: [Fusione]) {
+    func LoadFusiones(_ fusiones: PersonaFusion) {
         self.fusiones = fusiones
         exTable.reloadData()
     }
-    
-    
-    
     
 }
