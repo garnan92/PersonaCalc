@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PersonaResistance/PersonaResistance.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PersonaId/PersonaId.xcodeproj">
    </FileRef>
    <FileRef

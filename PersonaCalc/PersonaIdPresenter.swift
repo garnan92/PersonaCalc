@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import PersonaId
+import PersonaResistance
 import Alamofire
 
 class PersonaIdPresenter {
@@ -63,9 +64,10 @@ class PersonaIdPresenter {
                 guard let data = String(data: response.data!,encoding: .utf8) else {
                     return
                 }
-            
-                let valePersonaId = 5
                 
+                let personaResistance = try! PersonaResistance(data)
+                
+                self.personaIdDelegate?.LoadResistance(personaResistance)
                 
             case .failure(_):
                 print("error al procesar datos")
