@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import PersonaList
+import SDWebImage
 
 class PersonaViewController : UIViewController {
     
