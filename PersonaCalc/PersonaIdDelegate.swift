@@ -6,11 +6,15 @@
 //
 
 import Foundation
+import PersonaId
 
 protocol PersonaIdDelegate : NSObjectProtocol {
     
     func LoadName(_ name : String)
     func LoadLevel(_ level : Int)
     func LoadPrice(_ price : Int)
-    
+    func LoadRace(_ race: Game)
+    func LoadInherit(_ inherit : Game)
+    func LoadResistance(_ resistance: Resistance)
+    func LoadFusiones(_ fusiones: [Fusione])
 }

@@ -7,11 +7,15 @@
 
 import Foundation
 import UIKit
-
+import PersonaId
+import SDWebImage
 
 class PersonaIdViewController : UIViewController {
     
     var id : Int?
+    var fusiones : [Fusione] = []
+    
+    var personaIdPresenter : PersonaIdPresenter = PersonaIdPresenter()
     
     //MARK: - Componentes de la vista
     @IBOutlet weak var nameLabel: UILabel!
@@ -56,8 +60,52 @@ class PersonaIdViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        personaIdPresenter.setDelegate(self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        personaIdPresenter.LoadRestData(id!)
+        personaIdPresenter.LoadRestData(id!)
+    }
+    
+}
+
+extension PersonaIdViewController : PersonaIdDelegate {
+    
+    func LoadName(_ name: String) {
+        nameLabel.text = name
+    }
+    
+    func LoadLevel(_ level: Int) {
+        levelLabel.text = "lvl \(level)"
+    }
+    
+    func LoadPrice(_ price: Int) {
+        priceLabel.text = "Precio: \(price) ¥"
+    }
+    
+    func LoadRace(_ race: Game) {
+        RaceLabel.text = race.name
+    }
+    
+    func LoadInherit(_ inherit: Game) {
+        inheritLabel.text = inherit.name
+        inheritImage.sd_setImage(with: URL(string: "https://aqiu384.github.io/megaten-fusion-tool/assets/images/p5/\(inherit.name ?? "").png" ), completed: nil)
+    }
+    
+    func LoadResistance(_ resistance: Resistance) {
+        
+        physImage.sd_setImage(with: URL(string: "https://aqiu384.github.io/megaten-fusion-tool/assets/images/p5/phys.png" ), completed: nil)
+        physLabel.text = resistance.phys
         
     }
+    
+    func LoadFusiones(_ fusiones: [Fusione]) {
+        self.fusiones = fusiones
+        exTable.reloadData()
+    }
+    
     
     
     
