@@ -52,12 +52,18 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" red="0.103178747" green="0.10317315909999999" blue="0.1019607843" alpha="0.93474422089999998" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Entrar"/>
+                                        <connections>
+                                            <action selector="entrarDidLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ke4-0I-M64"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft6-2X-C3a">
                                         <rect key="frame" x="171.5" y="320" width="71" height="30"/>
                                         <state key="normal" title="Registarte">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registrarseDidPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQa-36-hhz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,6 +96,10 @@
                             <constraint firstItem="DKA-ah-lac" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Uoa-lq-xhP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Dh0-eQ-YGl" id="FPh-MU-WP2"/>
+                        <outlet property="userTextField" destination="ERe-Tm-ynA" id="06D-Wj-rjK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
