@@ -35,6 +35,7 @@
 		967A53F1257DAD93004C6174 /* PersonaDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53F0257DAD93004C6174 /* PersonaDelegate.swift */; };
 		967A540D257DAFD5004C6174 /* PersonaList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967A540C257DAFD5004C6174 /* PersonaList.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		967A540E257DAFD5004C6174 /* PersonaList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 967A540C257DAFD5004C6174 /* PersonaList.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		969CB2B1257DCCC800A2AA0F /* PersonaIdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969CB2B0257DCCC800A2AA0F /* PersonaIdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +83,7 @@
 		967A53ED257DAD71004C6174 /* PersonaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaPresenter.swift; sourceTree = "<group>"; };
 		967A53F0257DAD93004C6174 /* PersonaDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaDelegate.swift; sourceTree = "<group>"; };
 		967A540C257DAFD5004C6174 /* PersonaList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersonaList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		969CB2B0257DCCC800A2AA0F /* PersonaIdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonaIdViewController.xib; sourceTree = "<group>"; };
 		DF9ABC732A2264DEA9223F36 /* Pods-PersonaCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaCalc.release.xcconfig"; path = "Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				967A53DA257DA289004C6174 /* PersonaTableViewCell.xib */,
+				969CB2B0257DCCC800A2AA0F /* PersonaIdViewController.xib */,
 			);
 			name = Componentes;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969CB2B1257DCCC800A2AA0F /* PersonaIdViewController.xib in Resources */,
 				967A53CF257D9D5C004C6174 /* PersonaViewController.storyboard in Resources */,
 				967A53C5257D9B22004C6174 /* TabRoot.storyboard in Resources */,
 				965911E6257362DA00179388 /* LaunchScreen.storyboard in Resources */,
