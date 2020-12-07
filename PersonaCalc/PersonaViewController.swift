@@ -47,6 +47,8 @@ extension PersonaViewController : UITableViewDelegate , UITableViewDataSource {
         cell.levelLabel.text = "lvl \(items[indexPath.row].level ?? 0)"
         cell.inheritLabel.text = items[indexPath.row].inherit?.name
         
+        cell.inheritImage.sd_setImage(with: URL(string: "https://aqiu384.github.io/megaten-fusion-tool/assets/images/p5/\(items[indexPath.row].inherit?.name ?? "").png" ), completed: nil)
+        
         return cell
     }
     
