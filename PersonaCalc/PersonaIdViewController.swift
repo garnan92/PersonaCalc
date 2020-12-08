@@ -84,7 +84,9 @@ class PersonaIdViewController : UIViewController {
     
     
     @IBAction func viewSkills(_ sender: Any) {
-        
+        let registerView : SkillViewController = SkillViewController(nibName: "SkillViewController", bundle: nil)
+        registerView.id = self.id
+        show(registerView, sender: nil)
     }
     
     

@@ -14,6 +14,13 @@
 		9625AF5C257F442000880DEF /* RegistroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF5B257F442000880DEF /* RegistroPresenter.swift */; };
 		9625AF5E257F444200880DEF /* RegistroDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF5D257F444200880DEF /* RegistroDelegate.swift */; };
 		9625AF78257F59B600880DEF /* PythonWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF77257F59B600880DEF /* PythonWireFrame.swift */; };
+		9625AF7A257F5BA100880DEF /* SkillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9625AF79257F5BA100880DEF /* SkillViewController.xib */; };
+		9625AF7C257F5C0C00880DEF /* SkillCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9625AF7B257F5C0C00880DEF /* SkillCellView.xib */; };
+		9625AF7E257F5DCC00880DEF /* SkillCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF7D257F5DCC00880DEF /* SkillCellView.swift */; };
+		9625AF80257F5EA600880DEF /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF7F257F5EA600880DEF /* SkillViewController.swift */; };
+		9625AF82257F61C900880DEF /* SkillPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF81257F61C900880DEF /* SkillPresenter.swift */; };
+		9625AF84257F61DF00880DEF /* SkillDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF83257F61DF00880DEF /* SkillDelegate.swift */; };
+		9625AF9F257F62BA00880DEF /* PersonaSkill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9625AF9E257F62BA00880DEF /* PersonaSkill.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		965911D7257362D900179388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911D6257362D900179388 /* AppDelegate.swift */; };
 		965911D9257362D900179388 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911D8257362D900179388 /* SceneDelegate.swift */; };
 		965911DB257362D900179388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911DA257362D900179388 /* ViewController.swift */; };
@@ -70,6 +77,13 @@
 		9625AF5B257F442000880DEF /* RegistroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroPresenter.swift; sourceTree = "<group>"; };
 		9625AF5D257F444200880DEF /* RegistroDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroDelegate.swift; sourceTree = "<group>"; };
 		9625AF77257F59B600880DEF /* PythonWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonWireFrame.swift; sourceTree = "<group>"; };
+		9625AF79257F5BA100880DEF /* SkillViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillViewController.xib; sourceTree = "<group>"; };
+		9625AF7B257F5C0C00880DEF /* SkillCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillCellView.xib; sourceTree = "<group>"; };
+		9625AF7D257F5DCC00880DEF /* SkillCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCellView.swift; sourceTree = "<group>"; };
+		9625AF7F257F5EA600880DEF /* SkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
+		9625AF81257F61C900880DEF /* SkillPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillPresenter.swift; sourceTree = "<group>"; };
+		9625AF83257F61DF00880DEF /* SkillDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDelegate.swift; sourceTree = "<group>"; };
+		9625AF9E257F62BA00880DEF /* PersonaSkill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersonaSkill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		965911D3257362D900179388 /* PersonaCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965911D6257362D900179388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		965911D8257362D900179388 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9625AF9F257F62BA00880DEF /* PersonaSkill.framework in Frameworks */,
 				9625AF4D257DF7C100880DEF /* PersonaFusion.framework in Frameworks */,
 				969CB2F3257DEE7700A2AA0F /* PersonaResistance.framework in Frameworks */,
 				969CB2D8257DE20B00A2AA0F /* PersonaId.framework in Frameworks */,
@@ -124,6 +139,7 @@
 		2E74731344C1A6ECA510ED2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9625AF9E257F62BA00880DEF /* PersonaSkill.framework */,
 				9625AF4C257DF7C100880DEF /* PersonaFusion.framework */,
 				969CB2F2257DEE7700A2AA0F /* PersonaResistance.framework */,
 				969CB2D7257DE20B00A2AA0F /* PersonaId.framework */,
@@ -263,6 +279,8 @@
 				969CB2B0257DCCC800A2AA0F /* PersonaIdViewController.xib */,
 				969CB2B2257DD67100A2AA0F /* FusionViewCell.xib */,
 				9625AF57257F417000880DEF /* RegistroViewController.xib */,
+				9625AF79257F5BA100880DEF /* SkillViewController.xib */,
+				9625AF7B257F5C0C00880DEF /* SkillCellView.xib */,
 			);
 			name = Componentes;
 			sourceTree = "<group>";
@@ -274,6 +292,8 @@
 				969CB2B4257DD77A00A2AA0F /* FusionViewCell.swift */,
 				969CB2B6257DD98200A2AA0F /* PersonaIdViewController.swift */,
 				9625AF59257F419100880DEF /* RegistroViewController.swift */,
+				9625AF7D257F5DCC00880DEF /* SkillCellView.swift */,
+				9625AF7F257F5EA600880DEF /* SkillViewController.swift */,
 			);
 			name = Componentes;
 			sourceTree = "<group>";
@@ -314,6 +334,7 @@
 			children = (
 				969CB2B9257DDFEC00A2AA0F /* PersonaIdPresenter.swift */,
 				9625AF5B257F442000880DEF /* RegistroPresenter.swift */,
+				9625AF81257F61C900880DEF /* SkillPresenter.swift */,
 			);
 			name = Componentes;
 			sourceTree = "<group>";
@@ -323,6 +344,7 @@
 			children = (
 				969CB2BC257DE08E00A2AA0F /* PersonaIdDelegate.swift */,
 				9625AF5D257F444200880DEF /* RegistroDelegate.swift */,
+				9625AF83257F61DF00880DEF /* SkillDelegate.swift */,
 			);
 			name = Componentes;
 			sourceTree = "<group>";
@@ -403,8 +425,10 @@
 				965911E6257362DA00179388 /* LaunchScreen.storyboard in Resources */,
 				965911E3257362DA00179388 /* Assets.xcassets in Resources */,
 				967A53DB257DA289004C6174 /* PersonaTableViewCell.xib in Resources */,
+				9625AF7A257F5BA100880DEF /* SkillViewController.xib in Resources */,
 				965911DE257362D900179388 /* Main.storyboard in Resources */,
 				967A53CC257D9D02004C6174 /* InventarioViewController.storyboard in Resources */,
+				9625AF7C257F5C0C00880DEF /* SkillCellView.xib in Resources */,
 				9625AF58257F417000880DEF /* RegistroViewController.xib in Resources */,
 				967A53D2257D9D6E004C6174 /* ProfileViewController.storyboard in Resources */,
 				967A539E257D8059004C6174 /* LoginViewController.storyboard in Resources */,
@@ -468,9 +492,13 @@
 				967A53F1257DAD93004C6174 /* PersonaDelegate.swift in Sources */,
 				967A53D5257D9EA8004C6174 /* TabRootWireFrame.swift in Sources */,
 				965911DB257362D900179388 /* ViewController.swift in Sources */,
+				9625AF84257F61DF00880DEF /* SkillDelegate.swift in Sources */,
+				9625AF7E257F5DCC00880DEF /* SkillCellView.swift in Sources */,
 				967A53C1257D94DE004C6174 /* LoginPresenter.swift in Sources */,
 				969CB2BD257DE08E00A2AA0F /* PersonaIdDelegate.swift in Sources */,
+				9625AF82257F61C900880DEF /* SkillPresenter.swift in Sources */,
 				965911D7257362D900179388 /* AppDelegate.swift in Sources */,
+				9625AF80257F5EA600880DEF /* SkillViewController.swift in Sources */,
 				965911D9257362D900179388 /* SceneDelegate.swift in Sources */,
 				967A53EE257DAD71004C6174 /* PersonaPresenter.swift in Sources */,
 				967A53A7257D846A004C6174 /* LoginViewController.swift in Sources */,

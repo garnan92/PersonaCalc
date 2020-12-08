@@ -7,21 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9625AF86257F622800880DEF /* PersonaSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF85257F622800880DEF /* PersonaSkill.swift */; };
-		969CB2CD257DE1CF00A2AA0F /* PersonaId.h in Headers */ = {isa = PBXBuildFile; fileRef = 969CB2CB257DE1CF00A2AA0F /* PersonaId.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		969CB2D5257DE1EE00A2AA0F /* PersonaId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2D4257DE1EE00A2AA0F /* PersonaId.swift */; };
+		9625AF97257F62AC00880DEF /* PersonaSkill.h in Headers */ = {isa = PBXBuildFile; fileRef = 9625AF95257F62AC00880DEF /* PersonaSkill.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9625AFAA257F635100880DEF /* PersonaSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFA9257F635100880DEF /* PersonaSkills.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9625AF85257F622800880DEF /* PersonaSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonaSkill.swift; path = ../../PersonaSkill/PersonaSkill/PersonaSkill.swift; sourceTree = "<group>"; };
-		969CB2C8257DE1CE00A2AA0F /* PersonaId.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersonaId.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		969CB2CB257DE1CF00A2AA0F /* PersonaId.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonaId.h; sourceTree = "<group>"; };
-		969CB2CC257DE1CF00A2AA0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		969CB2D4257DE1EE00A2AA0F /* PersonaId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaId.swift; sourceTree = "<group>"; };
+		9625AF92257F62AC00880DEF /* PersonaSkill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersonaSkill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9625AF95257F62AC00880DEF /* PersonaSkill.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonaSkill.h; sourceTree = "<group>"; };
+		9625AF96257F62AC00880DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9625AFA9257F635100880DEF /* PersonaSkills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaSkills.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		969CB2C5257DE1CE00A2AA0F /* Frameworks */ = {
+		9625AF8F257F62AC00880DEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,80 +29,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		969CB2BE257DE1CE00A2AA0F = {
+		9625AF88257F62AC00880DEF = {
 			isa = PBXGroup;
 			children = (
-				969CB2CA257DE1CF00A2AA0F /* PersonaId */,
-				969CB2C9257DE1CE00A2AA0F /* Products */,
+				9625AF94257F62AC00880DEF /* PersonaSkill */,
+				9625AF93257F62AC00880DEF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		969CB2C9257DE1CE00A2AA0F /* Products */ = {
+		9625AF93257F62AC00880DEF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				969CB2C8257DE1CE00A2AA0F /* PersonaId.framework */,
+				9625AF92257F62AC00880DEF /* PersonaSkill.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		969CB2CA257DE1CF00A2AA0F /* PersonaId */ = {
+		9625AF94257F62AC00880DEF /* PersonaSkill */ = {
 			isa = PBXGroup;
 			children = (
-				969CB2CB257DE1CF00A2AA0F /* PersonaId.h */,
-				969CB2CC257DE1CF00A2AA0F /* Info.plist */,
-				969CB2D4257DE1EE00A2AA0F /* PersonaId.swift */,
-				9625AF85257F622800880DEF /* PersonaSkill.swift */,
+				9625AF95257F62AC00880DEF /* PersonaSkill.h */,
+				9625AF96257F62AC00880DEF /* Info.plist */,
+				9625AFA9257F635100880DEF /* PersonaSkills.swift */,
 			);
-			path = PersonaId;
+			path = PersonaSkill;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		969CB2C3257DE1CE00A2AA0F /* Headers */ = {
+		9625AF8D257F62AC00880DEF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				969CB2CD257DE1CF00A2AA0F /* PersonaId.h in Headers */,
+				9625AF97257F62AC00880DEF /* PersonaSkill.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		969CB2C7257DE1CE00A2AA0F /* PersonaId */ = {
+		9625AF91257F62AC00880DEF /* PersonaSkill */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 969CB2D0257DE1CF00A2AA0F /* Build configuration list for PBXNativeTarget "PersonaId" */;
+			buildConfigurationList = 9625AF9A257F62AC00880DEF /* Build configuration list for PBXNativeTarget "PersonaSkill" */;
 			buildPhases = (
-				969CB2C3257DE1CE00A2AA0F /* Headers */,
-				969CB2C4257DE1CE00A2AA0F /* Sources */,
-				969CB2C5257DE1CE00A2AA0F /* Frameworks */,
-				969CB2C6257DE1CE00A2AA0F /* Resources */,
+				9625AF8D257F62AC00880DEF /* Headers */,
+				9625AF8E257F62AC00880DEF /* Sources */,
+				9625AF8F257F62AC00880DEF /* Frameworks */,
+				9625AF90257F62AC00880DEF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PersonaId;
-			productName = PersonaId;
-			productReference = 969CB2C8257DE1CE00A2AA0F /* PersonaId.framework */;
+			name = PersonaSkill;
+			productName = PersonaSkill;
+			productReference = 9625AF92257F62AC00880DEF /* PersonaSkill.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		969CB2BF257DE1CE00A2AA0F /* Project object */ = {
+		9625AF89257F62AC00880DEF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					969CB2C7257DE1CE00A2AA0F = {
+					9625AF91257F62AC00880DEF = {
 						CreatedOnToolsVersion = 12.2;
 						LastSwiftMigration = 1220;
 					};
 				};
 			};
-			buildConfigurationList = 969CB2C2257DE1CE00A2AA0F /* Build configuration list for PBXProject "PersonaId" */;
+			buildConfigurationList = 9625AF8C257F62AC00880DEF /* Build configuration list for PBXProject "PersonaSkill" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,18 +109,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 969CB2BE257DE1CE00A2AA0F;
-			productRefGroup = 969CB2C9257DE1CE00A2AA0F /* Products */;
+			mainGroup = 9625AF88257F62AC00880DEF;
+			productRefGroup = 9625AF93257F62AC00880DEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				969CB2C7257DE1CE00A2AA0F /* PersonaId */,
+				9625AF91257F62AC00880DEF /* PersonaSkill */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		969CB2C6257DE1CE00A2AA0F /* Resources */ = {
+		9625AF90257F62AC00880DEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -133,19 +130,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		969CB2C4257DE1CE00A2AA0F /* Sources */ = {
+		9625AF8E257F62AC00880DEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9625AF86257F622800880DEF /* PersonaSkill.swift in Sources */,
-				969CB2D5257DE1EE00A2AA0F /* PersonaId.swift in Sources */,
+				9625AFAA257F635100880DEF /* PersonaSkills.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		969CB2CE257DE1CF00A2AA0F /* Debug */ = {
+		9625AF98257F62AC00880DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -209,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		969CB2CF257DE1CF00A2AA0F /* Release */ = {
+		9625AF99257F62AC00880DEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,7 +263,7 @@
 			};
 			name = Release;
 		};
-		969CB2D1257DE1CF00A2AA0F /* Debug */ = {
+		9625AF9B257F62AC00880DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -277,14 +273,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PersonaId/Info.plist;
+				INFOPLIST_FILE = PersonaSkill/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Khatastor.PersonaId;
+				PRODUCT_BUNDLE_IDENTIFIER = Khatastor.PersonaSkill;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -293,7 +289,7 @@
 			};
 			name = Debug;
 		};
-		969CB2D2257DE1CF00A2AA0F /* Release */ = {
+		9625AF9C257F62AC00880DEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -303,14 +299,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PersonaId/Info.plist;
+				INFOPLIST_FILE = PersonaSkill/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Khatastor.PersonaId;
+				PRODUCT_BUNDLE_IDENTIFIER = Khatastor.PersonaSkill;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -321,25 +317,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		969CB2C2257DE1CE00A2AA0F /* Build configuration list for PBXProject "PersonaId" */ = {
+		9625AF8C257F62AC00880DEF /* Build configuration list for PBXProject "PersonaSkill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				969CB2CE257DE1CF00A2AA0F /* Debug */,
-				969CB2CF257DE1CF00A2AA0F /* Release */,
+				9625AF98257F62AC00880DEF /* Debug */,
+				9625AF99257F62AC00880DEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		969CB2D0257DE1CF00A2AA0F /* Build configuration list for PBXNativeTarget "PersonaId" */ = {
+		9625AF9A257F62AC00880DEF /* Build configuration list for PBXNativeTarget "PersonaSkill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				969CB2D1257DE1CF00A2AA0F /* Debug */,
-				969CB2D2257DE1CF00A2AA0F /* Release */,
+				9625AF9B257F62AC00880DEF /* Debug */,
+				9625AF9C257F62AC00880DEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 969CB2BF257DE1CE00A2AA0F /* Project object */;
+	rootObject = 9625AF89257F62AC00880DEF /* Project object */;
 }
