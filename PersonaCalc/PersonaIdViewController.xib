@@ -199,6 +199,13 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLy-5P-Z7u">
+                    <rect key="frame" x="287" y="414" width="105" height="22"/>
+                    <state key="normal" title="Skills" image="plus" catalog="system"/>
+                    <connections>
+                        <action selector="viewSkills:" destination="-1" eventType="touchUpInside" id="HZJ-4H-6um"/>
+                    </connections>
+                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Inherit]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRo-YH-0WO">
                     <rect key="frame" x="103" y="259" width="291" height="29"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -216,6 +223,7 @@
                 <constraint firstItem="ZRo-YH-0WO" firstAttribute="leading" secondItem="FBg-Vk-CyO" secondAttribute="trailing" constant="24" id="DYn-MM-3Xa"/>
                 <constraint firstItem="1GU-ay-QIx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="GYc-Jq-2sq"/>
                 <constraint firstItem="1GU-ay-QIx" firstAttribute="top" secondItem="ONd-ho-bRg" secondAttribute="bottom" constant="20" id="Jzh-T4-XWQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FLy-5P-Z7u" secondAttribute="trailing" constant="22" id="LdM-eB-d7X"/>
                 <constraint firstItem="leb-f7-lul" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="M79-cv-eNM"/>
                 <constraint firstItem="WDx-K0-ufZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Of4-CN-Izk"/>
                 <constraint firstItem="WBw-Gj-Bet" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Phh-FR-kcF"/>
@@ -226,15 +234,18 @@
                 <constraint firstItem="ONd-ho-bRg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="aMG-pW-U1f"/>
                 <constraint firstItem="FBg-Vk-CyO" firstAttribute="top" secondItem="WBw-Gj-Bet" secondAttribute="bottom" constant="15" id="atV-s0-cBJ"/>
                 <constraint firstItem="ONd-ho-bRg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="d0U-k9-qkf"/>
+                <constraint firstItem="leb-f7-lul" firstAttribute="top" secondItem="FLy-5P-Z7u" secondAttribute="bottom" constant="12" id="lVr-BE-XB7"/>
                 <constraint firstItem="WBw-Gj-Bet" firstAttribute="top" secondItem="WDx-K0-ufZ" secondAttribute="bottom" constant="20" id="m5b-Ma-Ikd"/>
                 <constraint firstItem="leb-f7-lul" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="o9H-K2-GCD"/>
                 <constraint firstItem="ZRo-YH-0WO" firstAttribute="trailing" secondItem="ONd-ho-bRg" secondAttribute="trailing" id="rwh-Fy-olq"/>
                 <constraint firstItem="leb-f7-lul" firstAttribute="top" secondItem="NHD-u8-wWP" secondAttribute="bottom" constant="8" symbolic="YES" id="tmP-HK-MD4"/>
+                <constraint firstItem="FLy-5P-Z7u" firstAttribute="leading" secondItem="NHD-u8-wWP" secondAttribute="trailing" constant="187" id="xnk-J5-kO1"/>
             </constraints>
             <point key="canvasLocation" x="140.57971014492756" y="95.758928571428569"/>
         </view>
     </objects>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

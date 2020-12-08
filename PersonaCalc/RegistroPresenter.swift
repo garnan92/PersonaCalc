@@ -11,7 +11,7 @@ import TextFieldFloatingPlaceholder
 
 class RegistroPresenter {
     
-    var users = Users()
+    //var users = Users()
     
     weak var registroDelegate : RegistroDelegate?
     

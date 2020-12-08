@@ -55,7 +55,7 @@
         <!--Persona-->
         <scene sceneID="N0M-z3-CaZ">
             <objects>
-                <navigationController id="XLv-U8-EWX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="python" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XLv-U8-EWX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Persona" image="list.dash" catalog="system" id="jzI-Yo-Ggh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5RQ-4g-59a">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

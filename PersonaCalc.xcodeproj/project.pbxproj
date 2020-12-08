@@ -13,6 +13,7 @@
 		9625AF5A257F419100880DEF /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF59257F419100880DEF /* RegistroViewController.swift */; };
 		9625AF5C257F442000880DEF /* RegistroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF5B257F442000880DEF /* RegistroPresenter.swift */; };
 		9625AF5E257F444200880DEF /* RegistroDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF5D257F444200880DEF /* RegistroDelegate.swift */; };
+		9625AF78257F59B600880DEF /* PythonWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF77257F59B600880DEF /* PythonWireFrame.swift */; };
 		965911D7257362D900179388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911D6257362D900179388 /* AppDelegate.swift */; };
 		965911D9257362D900179388 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911D8257362D900179388 /* SceneDelegate.swift */; };
 		965911DB257362D900179388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911DA257362D900179388 /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 		9625AF59257F419100880DEF /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		9625AF5B257F442000880DEF /* RegistroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroPresenter.swift; sourceTree = "<group>"; };
 		9625AF5D257F444200880DEF /* RegistroDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroDelegate.swift; sourceTree = "<group>"; };
+		9625AF77257F59B600880DEF /* PythonWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonWireFrame.swift; sourceTree = "<group>"; };
 		965911D3257362D900179388 /* PersonaCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965911D6257362D900179388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		965911D8257362D900179388 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			children = (
 				967A53BC257D87E8004C6174 /* LoginControllerWireFrame.swift */,
 				967A53D4257D9EA8004C6174 /* TabRootWireFrame.swift */,
+				9625AF77257F59B600880DEF /* PythonWireFrame.swift */,
 			);
 			name = WireFrames;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				9625AF5E257F444200880DEF /* RegistroDelegate.swift in Sources */,
 				969CB2B5257DD77A00A2AA0F /* FusionViewCell.swift in Sources */,
 				9625AF5A257F419100880DEF /* RegistroViewController.swift in Sources */,
+				9625AF78257F59B600880DEF /* PythonWireFrame.swift in Sources */,
 				967A53F1257DAD93004C6174 /* PersonaDelegate.swift in Sources */,
 				967A53D5257D9EA8004C6174 /* TabRootWireFrame.swift in Sources */,
 				965911DB257362D900179388 /* ViewController.swift in Sources */,

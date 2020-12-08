@@ -67,7 +67,7 @@ class PersonaIdViewController : UIViewController {
         exTable.delegate = self
         personaIdPresenter.registerCell(exTable)
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(aggregar))
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(aggregar))
         
     }
     
@@ -81,6 +81,12 @@ class PersonaIdViewController : UIViewController {
     @objc func aggregar() {
         print("persona agregado")
     }
+    
+    
+    @IBAction func viewSkills(_ sender: Any) {
+        
+    }
+    
     
 }
 

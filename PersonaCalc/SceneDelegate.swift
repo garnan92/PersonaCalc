@@ -22,7 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.window = UIWindow(windowScene: wScene)
         
-        self.window?.rootViewController = LoginControlelrWireFrame.buildModule()
+        //self.window?.rootViewController = LoginControlelrWireFrame.buildModule()
+        
+        self.window?.rootViewController = PythonWireFrame.buildModule()
         
         self.window?.makeKeyAndVisible()
         
