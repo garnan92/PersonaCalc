@@ -67,7 +67,12 @@ class PersonaIdViewController : UIViewController {
         exTable.delegate = self
         personaIdPresenter.registerCell(exTable)
         
-        //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(aggregar))
+        if personaIdPresenter.Status(id!) {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(aggregar))
+        }
+        else{
+            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(quitar))
+        }
         
     }
     
@@ -80,13 +85,21 @@ class PersonaIdViewController : UIViewController {
     
     @objc func aggregar() {
         print("persona agregado")
+        personaIdPresenter.AgregarPersona(id!)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(quitar))
+    }
+    
+    @objc func quitar(){
+        print("quitar persona")
+        personaIdPresenter.QuiterPersona(id!)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(aggregar))
     }
     
     
     @IBAction func viewSkills(_ sender: Any) {
         let registerView : SkillViewController = SkillViewController(nibName: "SkillViewController", bundle: nil)
         registerView.id = self.id
-        show(registerView, sender: nil)
+        present(registerView, animated: true, completion: nil)
     }
     
     

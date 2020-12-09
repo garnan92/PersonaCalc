@@ -34,7 +34,7 @@ class RegistroPresenter {
     
     func AddUser(_ user : String, _ pass : String) {
         
-        /*let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
         let users = Users(context: context)
@@ -45,10 +45,10 @@ class RegistroPresenter {
         do {
             try context.save()
             //sendSuccesAlert(with: name)
-            print("se guado usuario")
+            print("se guardo usuario")
         } catch let error as NSError {
             print("No se puede guardar el usuario. Eror:\(error.userInfo)")
-        }*/
+        }
         
     }
     

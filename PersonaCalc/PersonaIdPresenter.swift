@@ -11,6 +11,7 @@ import PersonaId
 import PersonaResistance
 import PersonaFusion
 import Alamofire
+import CoreData
 
 class PersonaIdPresenter {
     
@@ -106,6 +107,96 @@ class PersonaIdPresenter {
     func registerCell(_ exTable : UITableView){
         let NibCell  = UINib(nibName: "FusionViewCell", bundle: nil)
         exTable.register(NibCell, forCellReuseIdentifier: FusionViewCell.CellID)
+    }
+    
+    func Status(_ id : Int) -> Bool {
+        
+        var personaData: [NSManagedObject] = []
+        
+        let user = UserDefaults.standard.string(forKey: "user")
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let request: NSFetchRequest = Persona.fetchRequest()
+        
+        do {
+            let result = try context.fetch(request)
+            personaData = result as [NSManagedObject]
+        } catch let error as NSError {
+            print("Error, no ha sido posible cargar user: \(error.userInfo)")
+        }
+        
+        
+        for per in personaData {
+            
+            if per.value(forKey: "username") as? String == user && per.value(forKey: "id_persona") as! Int == id {
+                
+                return false
+                
+            }
+            
+        }
+
+        return true
+        
+    }
+    
+    func AgregarPersona(_ id : Int) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let perso = Persona(context: context)
+        
+        perso.id_persona = Int64(id)
+        perso.username = UserDefaults.standard.string(forKey: "user")
+        
+        do {
+            try context.save()
+            //sendSuccesAlert(with: name)
+            print("se guardo persona")
+        } catch let error as NSError {
+            print("No se puede guardar el usuario. Eror:\(error.userInfo)")
+        }
+    }
+    
+    func QuiterPersona(_ id : Int){
+        var personaData: [NSManagedObject] = []
+        
+        let user = UserDefaults.standard.string(forKey: "user")
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let request: NSFetchRequest = Persona.fetchRequest()
+        
+        do {
+            let result = try context.fetch(request)
+            personaData = result as [NSManagedObject]
+        } catch let error as NSError {
+            print("Error, no ha sido posible cargar user: \(error.userInfo)")
+        }
+        
+        for per in personaData {
+            
+            if per.value(forKey: "username") as? String == user && per.value(forKey: "id_persona") as! Int == id {
+                
+                context.delete(per)
+                
+            }
+            
+        }
+
+        
+        do {
+            try context.save()
+            //sendSuccesAlert(with: name)
+            print("se quito persona")
+        } catch let error as NSError {
+            print("No se puede guardar el usuario. Eror:\(error.userInfo)")
+        }
+        
+        
     }
     
 }

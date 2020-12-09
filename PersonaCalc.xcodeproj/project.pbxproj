@@ -21,6 +21,14 @@
 		9625AF82257F61C900880DEF /* SkillPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF81257F61C900880DEF /* SkillPresenter.swift */; };
 		9625AF84257F61DF00880DEF /* SkillDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF83257F61DF00880DEF /* SkillDelegate.swift */; };
 		9625AF9F257F62BA00880DEF /* PersonaSkill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9625AF9E257F62BA00880DEF /* PersonaSkill.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9625AFB02580628600880DEF /* Persona+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFAC2580628500880DEF /* Persona+CoreDataClass.swift */; };
+		9625AFB12580628600880DEF /* Persona+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFAD2580628500880DEF /* Persona+CoreDataProperties.swift */; };
+		9625AFB22580628600880DEF /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFAE2580628500880DEF /* Users+CoreDataClass.swift */; };
+		9625AFB32580628600880DEF /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFAF2580628600880DEF /* Users+CoreDataProperties.swift */; };
+		9625AFB52580764A00880DEF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFB42580764A00880DEF /* ProfileViewController.swift */; };
+		9625AFB7258078C000880DEF /* InventarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFB6258078C000880DEF /* InventarioViewController.swift */; };
+		9625AFB92580792200880DEF /* InventarioDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFB82580792200880DEF /* InventarioDelegate.swift */; };
+		9625AFBB2580795B00880DEF /* InventarioPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFBA2580795B00880DEF /* InventarioPresenter.swift */; };
 		965911D7257362D900179388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911D6257362D900179388 /* AppDelegate.swift */; };
 		965911D9257362D900179388 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911D8257362D900179388 /* SceneDelegate.swift */; };
 		965911DB257362D900179388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911DA257362D900179388 /* ViewController.swift */; };
@@ -84,6 +92,14 @@
 		9625AF81257F61C900880DEF /* SkillPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillPresenter.swift; sourceTree = "<group>"; };
 		9625AF83257F61DF00880DEF /* SkillDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDelegate.swift; sourceTree = "<group>"; };
 		9625AF9E257F62BA00880DEF /* PersonaSkill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersonaSkill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9625AFAC2580628500880DEF /* Persona+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Persona+CoreDataClass.swift"; path = "DBEntites/Persona+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9625AFAD2580628500880DEF /* Persona+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Persona+CoreDataProperties.swift"; path = "DBEntites/Persona+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9625AFAE2580628500880DEF /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataClass.swift"; path = "DBEntites/Users+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9625AFAF2580628600880DEF /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataProperties.swift"; path = "DBEntites/Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9625AFB42580764A00880DEF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9625AFB6258078C000880DEF /* InventarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventarioViewController.swift; sourceTree = "<group>"; };
+		9625AFB82580792200880DEF /* InventarioDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventarioDelegate.swift; sourceTree = "<group>"; };
+		9625AFBA2580795B00880DEF /* InventarioPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventarioPresenter.swift; sourceTree = "<group>"; };
 		965911D3257362D900179388 /* PersonaCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965911D6257362D900179388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		965911D8257362D900179388 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -248,6 +264,10 @@
 		967A5393257D7D75004C6174 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				9625AFAC2580628500880DEF /* Persona+CoreDataClass.swift */,
+				9625AFAD2580628500880DEF /* Persona+CoreDataProperties.swift */,
+				9625AFAE2580628500880DEF /* Users+CoreDataClass.swift */,
+				9625AFAF2580628600880DEF /* Users+CoreDataProperties.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -302,6 +322,8 @@
 			isa = PBXGroup;
 			children = (
 				967A53EA257DAAB7004C6174 /* PersonaViewController.swift */,
+				9625AFB42580764A00880DEF /* ProfileViewController.swift */,
+				9625AFB6258078C000880DEF /* InventarioViewController.swift */,
 			);
 			name = Tabs;
 			sourceTree = "<group>";
@@ -310,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				967A53ED257DAD71004C6174 /* PersonaPresenter.swift */,
+				9625AFBA2580795B00880DEF /* InventarioPresenter.swift */,
 			);
 			name = Tabs;
 			sourceTree = "<group>";
@@ -318,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				967A53F0257DAD93004C6174 /* PersonaDelegate.swift */,
+				9625AFB82580792200880DEF /* InventarioDelegate.swift */,
 			);
 			name = Tabs;
 			sourceTree = "<group>";
@@ -487,19 +511,26 @@
 				967A53DE257DA2BE004C6174 /* PersonaTableViewCell.swift in Sources */,
 				9625AF5E257F444200880DEF /* RegistroDelegate.swift in Sources */,
 				969CB2B5257DD77A00A2AA0F /* FusionViewCell.swift in Sources */,
+				9625AFB02580628600880DEF /* Persona+CoreDataClass.swift in Sources */,
+				9625AFB92580792200880DEF /* InventarioDelegate.swift in Sources */,
 				9625AF5A257F419100880DEF /* RegistroViewController.swift in Sources */,
 				9625AF78257F59B600880DEF /* PythonWireFrame.swift in Sources */,
 				967A53F1257DAD93004C6174 /* PersonaDelegate.swift in Sources */,
 				967A53D5257D9EA8004C6174 /* TabRootWireFrame.swift in Sources */,
 				965911DB257362D900179388 /* ViewController.swift in Sources */,
 				9625AF84257F61DF00880DEF /* SkillDelegate.swift in Sources */,
+				9625AFBB2580795B00880DEF /* InventarioPresenter.swift in Sources */,
 				9625AF7E257F5DCC00880DEF /* SkillCellView.swift in Sources */,
+				9625AFB7258078C000880DEF /* InventarioViewController.swift in Sources */,
 				967A53C1257D94DE004C6174 /* LoginPresenter.swift in Sources */,
 				969CB2BD257DE08E00A2AA0F /* PersonaIdDelegate.swift in Sources */,
+				9625AFB52580764A00880DEF /* ProfileViewController.swift in Sources */,
 				9625AF82257F61C900880DEF /* SkillPresenter.swift in Sources */,
 				965911D7257362D900179388 /* AppDelegate.swift in Sources */,
 				9625AF80257F5EA600880DEF /* SkillViewController.swift in Sources */,
+				9625AFB12580628600880DEF /* Persona+CoreDataProperties.swift in Sources */,
 				965911D9257362D900179388 /* SceneDelegate.swift in Sources */,
+				9625AFB32580628600880DEF /* Users+CoreDataProperties.swift in Sources */,
 				967A53EE257DAD71004C6174 /* PersonaPresenter.swift in Sources */,
 				967A53A7257D846A004C6174 /* LoginViewController.swift in Sources */,
 				967A53EB257DAAB7004C6174 /* PersonaViewController.swift in Sources */,
@@ -508,6 +539,7 @@
 				969CB2B7257DD98200A2AA0F /* PersonaIdViewController.swift in Sources */,
 				965911E1257362D900179388 /* PersonaCalc.xcdatamodeld in Sources */,
 				9625AF5C257F442000880DEF /* RegistroPresenter.swift in Sources */,
+				9625AFB22580628600880DEF /* Users+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
