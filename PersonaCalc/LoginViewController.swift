@@ -28,7 +28,7 @@ class LoginViewController : UIViewController {
     }
     
     @IBAction func registrarseDidPressed(_ sender: Any) {
-        print("se quiere registrar")
+        loginPresenter.SingIn()
     }
     
     

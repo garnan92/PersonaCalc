@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import PersonaList
+import SDWebImage
 
 class PersonaViewController : UIViewController {
     
@@ -47,9 +48,20 @@ extension PersonaViewController : UITableViewDelegate , UITableViewDataSource {
         cell.levelLabel.text = "lvl \(items[indexPath.row].level ?? 0)"
         cell.inheritLabel.text = items[indexPath.row].inherit?.name
         
+        cell.inheritImage.sd_setImage(with: URL(string: "https://aqiu384.github.io/megaten-fusion-tool/assets/images/p5/\(items[indexPath.row].inherit?.name ?? "").png" ), completed: nil)
+        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let personaView : PersonaIdViewController = PersonaIdViewController(nibName: "PersonaIdViewController", bundle: nil)
+        
+        personaView.id = items[indexPath.row].id
+        
+        self.navigationController?.pushViewController(personaView, animated: true)
+        
+    }
     
 }
 

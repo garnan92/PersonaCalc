@@ -8,6 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		78C4E7E12DAAC14A4C376AC9 /* Pods_PersonaCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0468E0C62E1DF827F175AA8C /* Pods_PersonaCalc.framework */; };
+		9625AF4D257DF7C100880DEF /* PersonaFusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9625AF4C257DF7C100880DEF /* PersonaFusion.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9625AF58257F417000880DEF /* RegistroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9625AF57257F417000880DEF /* RegistroViewController.xib */; };
+		9625AF5A257F419100880DEF /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF59257F419100880DEF /* RegistroViewController.swift */; };
+		9625AF5C257F442000880DEF /* RegistroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF5B257F442000880DEF /* RegistroPresenter.swift */; };
+		9625AF5E257F444200880DEF /* RegistroDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF5D257F444200880DEF /* RegistroDelegate.swift */; };
+		9625AF78257F59B600880DEF /* PythonWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF77257F59B600880DEF /* PythonWireFrame.swift */; };
+		9625AF7A257F5BA100880DEF /* SkillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9625AF79257F5BA100880DEF /* SkillViewController.xib */; };
+		9625AF7C257F5C0C00880DEF /* SkillCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9625AF7B257F5C0C00880DEF /* SkillCellView.xib */; };
+		9625AF7E257F5DCC00880DEF /* SkillCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF7D257F5DCC00880DEF /* SkillCellView.swift */; };
+		9625AF80257F5EA600880DEF /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF7F257F5EA600880DEF /* SkillViewController.swift */; };
+		9625AF82257F61C900880DEF /* SkillPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF81257F61C900880DEF /* SkillPresenter.swift */; };
+		9625AF84257F61DF00880DEF /* SkillDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AF83257F61DF00880DEF /* SkillDelegate.swift */; };
+		9625AF9F257F62BA00880DEF /* PersonaSkill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9625AF9E257F62BA00880DEF /* PersonaSkill.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9625AFB02580628600880DEF /* Persona+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFAC2580628500880DEF /* Persona+CoreDataClass.swift */; };
+		9625AFB12580628600880DEF /* Persona+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFAD2580628500880DEF /* Persona+CoreDataProperties.swift */; };
+		9625AFB22580628600880DEF /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFAE2580628500880DEF /* Users+CoreDataClass.swift */; };
+		9625AFB32580628600880DEF /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFAF2580628600880DEF /* Users+CoreDataProperties.swift */; };
+		9625AFB52580764A00880DEF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFB42580764A00880DEF /* ProfileViewController.swift */; };
+		9625AFB7258078C000880DEF /* InventarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFB6258078C000880DEF /* InventarioViewController.swift */; };
+		9625AFB92580792200880DEF /* InventarioDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFB82580792200880DEF /* InventarioDelegate.swift */; };
+		9625AFBB2580795B00880DEF /* InventarioPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625AFBA2580795B00880DEF /* InventarioPresenter.swift */; };
 		965911D7257362D900179388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911D6257362D900179388 /* AppDelegate.swift */; };
 		965911D9257362D900179388 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911D8257362D900179388 /* SceneDelegate.swift */; };
 		965911DB257362D900179388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965911DA257362D900179388 /* ViewController.swift */; };
@@ -17,10 +38,6 @@
 		965911E6257362DA00179388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965911E4257362DA00179388 /* LaunchScreen.storyboard */; };
 		967A539E257D8059004C6174 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A539D257D8059004C6174 /* LoginViewController.storyboard */; };
 		967A53A7257D846A004C6174 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53A6257D846A004C6174 /* LoginViewController.swift */; };
-		967A53B7257D867C004C6174 /* Persona+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53B3257D867C004C6174 /* Persona+CoreDataClass.swift */; };
-		967A53B8257D867C004C6174 /* Persona+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53B4257D867C004C6174 /* Persona+CoreDataProperties.swift */; };
-		967A53B9257D867C004C6174 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53B5257D867C004C6174 /* Users+CoreDataClass.swift */; };
-		967A53BA257D867C004C6174 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53B6257D867C004C6174 /* Users+CoreDataProperties.swift */; };
 		967A53BD257D87E8004C6174 /* LoginControllerWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53BC257D87E8004C6174 /* LoginControllerWireFrame.swift */; };
 		967A53C1257D94DE004C6174 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53C0257D94DE004C6174 /* LoginPresenter.swift */; };
 		967A53C5257D9B22004C6174 /* TabRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A53C4257D9B22004C6174 /* TabRoot.storyboard */; };
@@ -35,6 +52,14 @@
 		967A53F1257DAD93004C6174 /* PersonaDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A53F0257DAD93004C6174 /* PersonaDelegate.swift */; };
 		967A540D257DAFD5004C6174 /* PersonaList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967A540C257DAFD5004C6174 /* PersonaList.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		967A540E257DAFD5004C6174 /* PersonaList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 967A540C257DAFD5004C6174 /* PersonaList.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		969CB2B1257DCCC800A2AA0F /* PersonaIdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969CB2B0257DCCC800A2AA0F /* PersonaIdViewController.xib */; };
+		969CB2B3257DD67100A2AA0F /* FusionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969CB2B2257DD67100A2AA0F /* FusionViewCell.xib */; };
+		969CB2B5257DD77A00A2AA0F /* FusionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2B4257DD77A00A2AA0F /* FusionViewCell.swift */; };
+		969CB2B7257DD98200A2AA0F /* PersonaIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2B6257DD98200A2AA0F /* PersonaIdViewController.swift */; };
+		969CB2BA257DDFEC00A2AA0F /* PersonaIdPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2B9257DDFEC00A2AA0F /* PersonaIdPresenter.swift */; };
+		969CB2BD257DE08E00A2AA0F /* PersonaIdDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CB2BC257DE08E00A2AA0F /* PersonaIdDelegate.swift */; };
+		969CB2D8257DE20B00A2AA0F /* PersonaId.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969CB2D7257DE20B00A2AA0F /* PersonaId.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		969CB2F3257DEE7700A2AA0F /* PersonaResistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969CB2F2257DEE7700A2AA0F /* PersonaResistance.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +79,27 @@
 /* Begin PBXFileReference section */
 		0468E0C62E1DF827F175AA8C /* Pods_PersonaCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonaCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC9166BB2522F393CC9C1AE /* Pods-PersonaCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaCalc.debug.xcconfig"; path = "Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		9625AF4C257DF7C100880DEF /* PersonaFusion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersonaFusion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9625AF57257F417000880DEF /* RegistroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistroViewController.xib; sourceTree = "<group>"; };
+		9625AF59257F419100880DEF /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		9625AF5B257F442000880DEF /* RegistroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroPresenter.swift; sourceTree = "<group>"; };
+		9625AF5D257F444200880DEF /* RegistroDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroDelegate.swift; sourceTree = "<group>"; };
+		9625AF77257F59B600880DEF /* PythonWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonWireFrame.swift; sourceTree = "<group>"; };
+		9625AF79257F5BA100880DEF /* SkillViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillViewController.xib; sourceTree = "<group>"; };
+		9625AF7B257F5C0C00880DEF /* SkillCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillCellView.xib; sourceTree = "<group>"; };
+		9625AF7D257F5DCC00880DEF /* SkillCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCellView.swift; sourceTree = "<group>"; };
+		9625AF7F257F5EA600880DEF /* SkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
+		9625AF81257F61C900880DEF /* SkillPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillPresenter.swift; sourceTree = "<group>"; };
+		9625AF83257F61DF00880DEF /* SkillDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDelegate.swift; sourceTree = "<group>"; };
+		9625AF9E257F62BA00880DEF /* PersonaSkill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersonaSkill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9625AFAC2580628500880DEF /* Persona+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Persona+CoreDataClass.swift"; path = "DBEntites/Persona+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9625AFAD2580628500880DEF /* Persona+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Persona+CoreDataProperties.swift"; path = "DBEntites/Persona+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9625AFAE2580628500880DEF /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataClass.swift"; path = "DBEntites/Users+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9625AFAF2580628600880DEF /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataProperties.swift"; path = "DBEntites/Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9625AFB42580764A00880DEF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9625AFB6258078C000880DEF /* InventarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventarioViewController.swift; sourceTree = "<group>"; };
+		9625AFB82580792200880DEF /* InventarioDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventarioDelegate.swift; sourceTree = "<group>"; };
+		9625AFBA2580795B00880DEF /* InventarioPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventarioPresenter.swift; sourceTree = "<group>"; };
 		965911D3257362D900179388 /* PersonaCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965911D6257362D900179388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		965911D8257362D900179388 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,10 +111,6 @@
 		965911E7257362DA00179388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		967A539D257D8059004C6174 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		967A53A6257D846A004C6174 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		967A53B3257D867C004C6174 /* Persona+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Persona+CoreDataClass.swift"; path = "DBEntites/Persona+CoreDataClass.swift"; sourceTree = "<group>"; };
-		967A53B4257D867C004C6174 /* Persona+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Persona+CoreDataProperties.swift"; path = "DBEntites/Persona+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		967A53B5257D867C004C6174 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataClass.swift"; path = "DBEntites/Users+CoreDataClass.swift"; sourceTree = "<group>"; };
-		967A53B6257D867C004C6174 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataProperties.swift"; path = "DBEntites/Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		967A53BC257D87E8004C6174 /* LoginControllerWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerWireFrame.swift; sourceTree = "<group>"; };
 		967A53C0257D94DE004C6174 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		967A53C4257D9B22004C6174 /* TabRoot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabRoot.storyboard; sourceTree = "<group>"; };
@@ -82,6 +124,14 @@
 		967A53ED257DAD71004C6174 /* PersonaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaPresenter.swift; sourceTree = "<group>"; };
 		967A53F0257DAD93004C6174 /* PersonaDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaDelegate.swift; sourceTree = "<group>"; };
 		967A540C257DAFD5004C6174 /* PersonaList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersonaList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		969CB2B0257DCCC800A2AA0F /* PersonaIdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonaIdViewController.xib; sourceTree = "<group>"; };
+		969CB2B2257DD67100A2AA0F /* FusionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FusionViewCell.xib; sourceTree = "<group>"; };
+		969CB2B4257DD77A00A2AA0F /* FusionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FusionViewCell.swift; sourceTree = "<group>"; };
+		969CB2B6257DD98200A2AA0F /* PersonaIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaIdViewController.swift; sourceTree = "<group>"; };
+		969CB2B9257DDFEC00A2AA0F /* PersonaIdPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaIdPresenter.swift; sourceTree = "<group>"; };
+		969CB2BC257DE08E00A2AA0F /* PersonaIdDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaIdDelegate.swift; sourceTree = "<group>"; };
+		969CB2D7257DE20B00A2AA0F /* PersonaId.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersonaId.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		969CB2F2257DEE7700A2AA0F /* PersonaResistance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersonaResistance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9ABC732A2264DEA9223F36 /* Pods-PersonaCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaCalc.release.xcconfig"; path = "Target Support Files/Pods-PersonaCalc/Pods-PersonaCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +140,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9625AF9F257F62BA00880DEF /* PersonaSkill.framework in Frameworks */,
+				9625AF4D257DF7C100880DEF /* PersonaFusion.framework in Frameworks */,
+				969CB2F3257DEE7700A2AA0F /* PersonaResistance.framework in Frameworks */,
+				969CB2D8257DE20B00A2AA0F /* PersonaId.framework in Frameworks */,
 				78C4E7E12DAAC14A4C376AC9 /* Pods_PersonaCalc.framework in Frameworks */,
 				967A540D257DAFD5004C6174 /* PersonaList.framework in Frameworks */,
 			);
@@ -101,6 +155,10 @@
 		2E74731344C1A6ECA510ED2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9625AF9E257F62BA00880DEF /* PersonaSkill.framework */,
+				9625AF4C257DF7C100880DEF /* PersonaFusion.framework */,
+				969CB2F2257DEE7700A2AA0F /* PersonaResistance.framework */,
+				969CB2D7257DE20B00A2AA0F /* PersonaId.framework */,
 				967A540C257DAFD5004C6174 /* PersonaList.framework */,
 				0468E0C62E1DF827F175AA8C /* Pods_PersonaCalc.framework */,
 			);
@@ -168,6 +226,7 @@
 		967A538F257D7711004C6174 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				969CB2B8257DDFDA00A2AA0F /* Componentes */,
 				967A53E8257DA92A004C6174 /* Tabs */,
 				967A53C0257D94DE004C6174 /* LoginPresenter.swift */,
 			);
@@ -179,6 +238,7 @@
 			children = (
 				967A53BC257D87E8004C6174 /* LoginControllerWireFrame.swift */,
 				967A53D4257D9EA8004C6174 /* TabRootWireFrame.swift */,
+				9625AF77257F59B600880DEF /* PythonWireFrame.swift */,
 			);
 			name = WireFrames;
 			sourceTree = "<group>";
@@ -204,10 +264,10 @@
 		967A5393257D7D75004C6174 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				967A53B3257D867C004C6174 /* Persona+CoreDataClass.swift */,
-				967A53B4257D867C004C6174 /* Persona+CoreDataProperties.swift */,
-				967A53B5257D867C004C6174 /* Users+CoreDataClass.swift */,
-				967A53B6257D867C004C6174 /* Users+CoreDataProperties.swift */,
+				9625AFAC2580628500880DEF /* Persona+CoreDataClass.swift */,
+				9625AFAD2580628500880DEF /* Persona+CoreDataProperties.swift */,
+				9625AFAE2580628500880DEF /* Users+CoreDataClass.swift */,
+				9625AFAF2580628600880DEF /* Users+CoreDataProperties.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -215,6 +275,7 @@
 		967A53BF257D9438004C6174 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				969CB2BB257DE01C00A2AA0F /* Componentes */,
 				967A53E9257DA930004C6174 /* Tabs */,
 			);
 			name = Delegates;
@@ -235,6 +296,11 @@
 			isa = PBXGroup;
 			children = (
 				967A53DA257DA289004C6174 /* PersonaTableViewCell.xib */,
+				969CB2B0257DCCC800A2AA0F /* PersonaIdViewController.xib */,
+				969CB2B2257DD67100A2AA0F /* FusionViewCell.xib */,
+				9625AF57257F417000880DEF /* RegistroViewController.xib */,
+				9625AF79257F5BA100880DEF /* SkillViewController.xib */,
+				9625AF7B257F5C0C00880DEF /* SkillCellView.xib */,
 			);
 			name = Componentes;
 			sourceTree = "<group>";
@@ -243,6 +309,11 @@
 			isa = PBXGroup;
 			children = (
 				967A53DD257DA2BE004C6174 /* PersonaTableViewCell.swift */,
+				969CB2B4257DD77A00A2AA0F /* FusionViewCell.swift */,
+				969CB2B6257DD98200A2AA0F /* PersonaIdViewController.swift */,
+				9625AF59257F419100880DEF /* RegistroViewController.swift */,
+				9625AF7D257F5DCC00880DEF /* SkillCellView.swift */,
+				9625AF7F257F5EA600880DEF /* SkillViewController.swift */,
 			);
 			name = Componentes;
 			sourceTree = "<group>";
@@ -251,6 +322,8 @@
 			isa = PBXGroup;
 			children = (
 				967A53EA257DAAB7004C6174 /* PersonaViewController.swift */,
+				9625AFB42580764A00880DEF /* ProfileViewController.swift */,
+				9625AFB6258078C000880DEF /* InventarioViewController.swift */,
 			);
 			name = Tabs;
 			sourceTree = "<group>";
@@ -259,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				967A53ED257DAD71004C6174 /* PersonaPresenter.swift */,
+				9625AFBA2580795B00880DEF /* InventarioPresenter.swift */,
 			);
 			name = Tabs;
 			sourceTree = "<group>";
@@ -267,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				967A53F0257DAD93004C6174 /* PersonaDelegate.swift */,
+				9625AFB82580792200880DEF /* InventarioDelegate.swift */,
 			);
 			name = Tabs;
 			sourceTree = "<group>";
@@ -274,6 +349,26 @@
 		967A5414257DBE6C004C6174 /* Componentes */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			name = Componentes;
+			sourceTree = "<group>";
+		};
+		969CB2B8257DDFDA00A2AA0F /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				969CB2B9257DDFEC00A2AA0F /* PersonaIdPresenter.swift */,
+				9625AF5B257F442000880DEF /* RegistroPresenter.swift */,
+				9625AF81257F61C900880DEF /* SkillPresenter.swift */,
+			);
+			name = Componentes;
+			sourceTree = "<group>";
+		};
+		969CB2BB257DE01C00A2AA0F /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				969CB2BC257DE08E00A2AA0F /* PersonaIdDelegate.swift */,
+				9625AF5D257F444200880DEF /* RegistroDelegate.swift */,
+				9625AF83257F61DF00880DEF /* SkillDelegate.swift */,
 			);
 			name = Componentes;
 			sourceTree = "<group>";
@@ -347,13 +442,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969CB2B1257DCCC800A2AA0F /* PersonaIdViewController.xib in Resources */,
 				967A53CF257D9D5C004C6174 /* PersonaViewController.storyboard in Resources */,
+				969CB2B3257DD67100A2AA0F /* FusionViewCell.xib in Resources */,
 				967A53C5257D9B22004C6174 /* TabRoot.storyboard in Resources */,
 				965911E6257362DA00179388 /* LaunchScreen.storyboard in Resources */,
 				965911E3257362DA00179388 /* Assets.xcassets in Resources */,
 				967A53DB257DA289004C6174 /* PersonaTableViewCell.xib in Resources */,
+				9625AF7A257F5BA100880DEF /* SkillViewController.xib in Resources */,
 				965911DE257362D900179388 /* Main.storyboard in Resources */,
 				967A53CC257D9D02004C6174 /* InventarioViewController.storyboard in Resources */,
+				9625AF7C257F5C0C00880DEF /* SkillCellView.xib in Resources */,
+				9625AF58257F417000880DEF /* RegistroViewController.xib in Resources */,
 				967A53D2257D9D6E004C6174 /* ProfileViewController.storyboard in Resources */,
 				967A539E257D8059004C6174 /* LoginViewController.storyboard in Resources */,
 			);
@@ -409,21 +509,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				967A53DE257DA2BE004C6174 /* PersonaTableViewCell.swift in Sources */,
-				967A53B7257D867C004C6174 /* Persona+CoreDataClass.swift in Sources */,
-				967A53BA257D867C004C6174 /* Users+CoreDataProperties.swift in Sources */,
+				9625AF5E257F444200880DEF /* RegistroDelegate.swift in Sources */,
+				969CB2B5257DD77A00A2AA0F /* FusionViewCell.swift in Sources */,
+				9625AFB02580628600880DEF /* Persona+CoreDataClass.swift in Sources */,
+				9625AFB92580792200880DEF /* InventarioDelegate.swift in Sources */,
+				9625AF5A257F419100880DEF /* RegistroViewController.swift in Sources */,
+				9625AF78257F59B600880DEF /* PythonWireFrame.swift in Sources */,
 				967A53F1257DAD93004C6174 /* PersonaDelegate.swift in Sources */,
 				967A53D5257D9EA8004C6174 /* TabRootWireFrame.swift in Sources */,
 				965911DB257362D900179388 /* ViewController.swift in Sources */,
-				967A53B9257D867C004C6174 /* Users+CoreDataClass.swift in Sources */,
+				9625AF84257F61DF00880DEF /* SkillDelegate.swift in Sources */,
+				9625AFBB2580795B00880DEF /* InventarioPresenter.swift in Sources */,
+				9625AF7E257F5DCC00880DEF /* SkillCellView.swift in Sources */,
+				9625AFB7258078C000880DEF /* InventarioViewController.swift in Sources */,
 				967A53C1257D94DE004C6174 /* LoginPresenter.swift in Sources */,
-				967A53B8257D867C004C6174 /* Persona+CoreDataProperties.swift in Sources */,
+				969CB2BD257DE08E00A2AA0F /* PersonaIdDelegate.swift in Sources */,
+				9625AFB52580764A00880DEF /* ProfileViewController.swift in Sources */,
+				9625AF82257F61C900880DEF /* SkillPresenter.swift in Sources */,
 				965911D7257362D900179388 /* AppDelegate.swift in Sources */,
+				9625AF80257F5EA600880DEF /* SkillViewController.swift in Sources */,
+				9625AFB12580628600880DEF /* Persona+CoreDataProperties.swift in Sources */,
 				965911D9257362D900179388 /* SceneDelegate.swift in Sources */,
+				9625AFB32580628600880DEF /* Users+CoreDataProperties.swift in Sources */,
 				967A53EE257DAD71004C6174 /* PersonaPresenter.swift in Sources */,
 				967A53A7257D846A004C6174 /* LoginViewController.swift in Sources */,
 				967A53EB257DAAB7004C6174 /* PersonaViewController.swift in Sources */,
+				969CB2BA257DDFEC00A2AA0F /* PersonaIdPresenter.swift in Sources */,
 				967A53BD257D87E8004C6174 /* LoginControllerWireFrame.swift in Sources */,
+				969CB2B7257DD98200A2AA0F /* PersonaIdViewController.swift in Sources */,
 				965911E1257362D900179388 /* PersonaCalc.xcdatamodeld in Sources */,
+				9625AF5C257F442000880DEF /* RegistroPresenter.swift in Sources */,
+				9625AFB22580628600880DEF /* Users+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistroViewController" customModule="PersonaCalc" customModuleProvider="target">
+            <connections>
+                <outlet property="passTextField" destination="PKw-NI-TT1" id="4Z9-qO-reT"/>
+                <outlet property="userTextField" destination="t1T-Lx-J7H" id="djG-yo-5nG"/>
+                <outlet property="view" destination="iN0-l3-epB" id="95w-Yq-D6s"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="RegistroViewController" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="t1T-Lx-J7H" customClass="TextFieldFloatingPlaceholder" customModule="TextFieldFloatingPlaceholder">
+                    <rect key="frame" x="20" y="232" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="PKw-NI-TT1" customClass="TextFieldFloatingPlaceholder" customModule="TextFieldFloatingPlaceholder">
+                    <rect key="frame" x="20" y="308" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrD-y3-zXd">
+                    <rect key="frame" x="20" y="433" width="374" height="36"/>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.1058823529" blue="0.14117647059999999" alpha="0.75296982020000003" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="tintColor" red="0.103178747" green="0.10317315909999999" blue="0.1019607843" alpha="0.93474422089999998" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Registrar"/>
+                    <connections>
+                        <action selector="ResgistrarPressed:" destination="-1" eventType="touchUpInside" id="Luw-Us-OPI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.103178747" green="0.10317315909999999" blue="0.1019607843" alpha="0.93474422089999998" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="PKw-NI-TT1" firstAttribute="top" secondItem="t1T-Lx-J7H" secondAttribute="bottom" constant="42" id="30w-m9-Olk"/>
+                <constraint firstItem="MrD-y3-zXd" firstAttribute="top" secondItem="PKw-NI-TT1" secondAttribute="bottom" constant="91" id="FpF-dR-7xg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PKw-NI-TT1" secondAttribute="trailing" constant="20" id="Hwh-h7-9tS"/>
+                <constraint firstItem="t1T-Lx-J7H" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="188" id="SBo-4b-fUF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MrD-y3-zXd" secondAttribute="trailing" constant="20" id="WUv-qb-eFx"/>
+                <constraint firstItem="t1T-Lx-J7H" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bVa-4J-9X7"/>
+                <constraint firstItem="PKw-NI-TT1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="gRC-SM-J9V"/>
+                <constraint firstItem="MrD-y3-zXd" firstAttribute="top" secondItem="PKw-NI-TT1" secondAttribute="bottom" constant="91" id="jHb-l5-MMl"/>
+                <constraint firstItem="MrD-y3-zXd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="mL6-wP-STW"/>
+                <constraint firstItem="PKw-NI-TT1" firstAttribute="top" secondItem="t1T-Lx-J7H" secondAttribute="bottom" constant="42" id="oxA-AY-KY8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="MrD-y3-zXd" secondAttribute="bottom" constant="393" id="yFF-4G-UKj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="t1T-Lx-J7H" secondAttribute="trailing" constant="20" id="zFu-1r-KDY"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="77.678571428571431"/>
+        </view>
+    </objects>
+</document>

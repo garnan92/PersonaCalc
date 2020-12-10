@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PersonaSkill/PersonaSkill.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PersonaFusion/PersonaFusion.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PersonaResistance/PersonaResistance.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PersonaId/PersonaId.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PersonaList/PersonaList.xcodeproj">
    </FileRef>
    <FileRef

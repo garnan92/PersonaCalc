@@ -18,11 +18,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         //guard let _ = (scene as? UIWindowScene) else { return }
         
+        let getUser = (UserDefaults.standard.string(forKey: "user") ?? "no user")
+        
+        print("cargar app con: \(getUser)")
+        
         guard let wScene = scene as? UIWindowScene else {return}
         
         self.window = UIWindow(windowScene: wScene)
         
-        self.window?.rootViewController = LoginControlelrWireFrame.buildModule()
+        if getUser == "no user"{
+            self.window?.rootViewController = LoginControlelrWireFrame.buildModule()
+        }
+        else {
+            self.window?.rootViewController = TabRootWireFrame.buildModule()
+        }
+        //self.window?.rootViewController = PythonWireFrame.buildModule()
         
         self.window?.makeKeyAndVisible()
         

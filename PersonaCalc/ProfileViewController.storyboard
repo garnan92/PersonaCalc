@@ -8,29 +8,55 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="nq6-11-1Lb">
             <objects>
-                <viewController storyboardIdentifier="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cCz-CG-UIx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cCz-CG-UIx" customClass="ProfileViewController" customModule="PersonaCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dGz-lh-ngs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njG-y5-aDY">
-                                <rect key="frame" x="186" y="438" width="48" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0n3-E9-yTg">
+                                <rect key="frame" x="20" y="821" width="374" height="41"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.1058823529" blue="0.14117647059999999" alpha="0.75296982020000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Cerrar Sesion">
+                                    <color key="titleColor" red="0.103178747" green="0.10317315909999999" blue="0.1019607843" alpha="0.93474422089999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOut:" destination="cCz-CG-UIx" eventType="touchUpInside" id="t8H-bf-PbL"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Van-lR-zHt">
+                                <rect key="frame" x="0.0" y="151" width="414" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yV2-oO-7iX">
+                                        <rect key="frame" x="8" y="8" width="398" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JJS-qG-crR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.103178747" green="0.10317315909999999" blue="0.1019607843" alpha="0.93474422089999998" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="JJS-qG-crR" firstAttribute="trailing" secondItem="0n3-E9-yTg" secondAttribute="trailing" constant="20" id="SJI-jc-vQE"/>
+                            <constraint firstItem="0n3-E9-yTg" firstAttribute="bottom" secondItem="JJS-qG-crR" secondAttribute="bottom" id="hm1-l0-VNW"/>
+                            <constraint firstItem="0n3-E9-yTg" firstAttribute="leading" secondItem="JJS-qG-crR" secondAttribute="leading" constant="20" id="xSw-Zv-kz3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileText" destination="yV2-oO-7iX" id="FyZ-V8-UzB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKk-BJ-6hf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88" y="150"/>
+            <point key="canvasLocation" x="86.956521739130437" y="150"/>
         </scene>
     </scenes>
     <resources>

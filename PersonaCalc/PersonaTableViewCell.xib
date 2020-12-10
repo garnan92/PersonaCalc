@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,13 +24,6 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="0.72818574989999996" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="xzR-RA-ub1">
-                        <rect key="frame" x="314" y="15" width="80" height="80"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="80" id="SmN-C2-dyT"/>
-                            <constraint firstAttribute="width" constant="80" id="W2O-EF-FvS"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Inherit]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7N-Ye-yAp">
                         <rect key="frame" x="289" y="100" width="105" height="21"/>
                         <constraints>
@@ -62,22 +54,29 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="0.72818574989999996" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="xzR-RA-ub1">
+                        <rect key="frame" x="328" y="36" width="41" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="SmN-C2-dyT"/>
+                            <constraint firstAttribute="width" constant="41" id="W2O-EF-FvS"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" red="0.103178747" green="0.10317315909999999" blue="0.1019607843" alpha="0.93474422089999998" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
-                    <constraint firstItem="xzR-RA-ub1" firstAttribute="leading" secondItem="Tym-P4-SYh" secondAttribute="trailing" constant="8" symbolic="YES" id="97R-11-7de"/>
-                    <constraint firstItem="xzR-RA-ub1" firstAttribute="leading" secondItem="dFJ-1R-xp8" secondAttribute="trailing" constant="8" symbolic="YES" id="D6A-sW-4JE"/>
-                    <constraint firstItem="D7N-Ye-yAp" firstAttribute="top" secondItem="xzR-RA-ub1" secondAttribute="bottom" constant="5" id="IDj-Bc-mwm"/>
+                    <constraint firstItem="xzR-RA-ub1" firstAttribute="leading" secondItem="Tym-P4-SYh" secondAttribute="trailing" constant="22" id="97R-11-7de"/>
+                    <constraint firstItem="xzR-RA-ub1" firstAttribute="leading" secondItem="dFJ-1R-xp8" secondAttribute="trailing" constant="22" id="D6A-sW-4JE"/>
+                    <constraint firstItem="D7N-Ye-yAp" firstAttribute="top" secondItem="xzR-RA-ub1" secondAttribute="bottom" constant="14" id="IDj-Bc-mwm"/>
                     <constraint firstItem="Tym-P4-SYh" firstAttribute="leading" secondItem="rdT-zK-njC" secondAttribute="leading" constant="20" symbolic="YES" id="Ifb-nw-BAT"/>
                     <constraint firstItem="dFJ-1R-xp8" firstAttribute="top" secondItem="rdT-zK-njC" secondAttribute="top" constant="15" id="VLP-HT-SA2"/>
                     <constraint firstItem="D7N-Ye-yAp" firstAttribute="trailing" secondItem="rdT-zK-njC" secondAttribute="trailingMargin" id="fla-0F-QRc"/>
                     <constraint firstItem="Tym-P4-SYh" firstAttribute="top" secondItem="dFJ-1R-xp8" secondAttribute="bottom" constant="15" id="hC9-4m-mps"/>
-                    <constraint firstItem="xzR-RA-ub1" firstAttribute="top" secondItem="rdT-zK-njC" secondAttribute="top" constant="15" id="hXp-Rp-N9f"/>
+                    <constraint firstItem="xzR-RA-ub1" firstAttribute="top" secondItem="rdT-zK-njC" secondAttribute="top" constant="36" id="hXp-Rp-N9f"/>
                     <constraint firstItem="5lN-1P-H8b" firstAttribute="top" secondItem="Tym-P4-SYh" secondAttribute="bottom" constant="15" id="is1-cd-Hs9"/>
                     <constraint firstItem="dFJ-1R-xp8" firstAttribute="leading" secondItem="rdT-zK-njC" secondAttribute="leading" constant="20" symbolic="YES" id="nQI-2P-axD"/>
                     <constraint firstItem="5lN-1P-H8b" firstAttribute="leading" secondItem="rdT-zK-njC" secondAttribute="leadingMargin" id="uNb-6W-iGJ"/>
-                    <constraint firstAttribute="trailing" secondItem="xzR-RA-ub1" secondAttribute="trailing" constant="20" symbolic="YES" id="v5g-ZF-dbw"/>
-                    <constraint firstItem="xzR-RA-ub1" firstAttribute="leading" secondItem="5lN-1P-H8b" secondAttribute="trailing" constant="8" symbolic="YES" id="vIq-bZ-GOK"/>
+                    <constraint firstAttribute="trailing" secondItem="xzR-RA-ub1" secondAttribute="trailing" constant="45" id="v5g-ZF-dbw"/>
+                    <constraint firstItem="xzR-RA-ub1" firstAttribute="leading" secondItem="5lN-1P-H8b" secondAttribute="trailing" constant="22" id="vIq-bZ-GOK"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -87,7 +86,7 @@
                 <outlet property="nameLabel" destination="dFJ-1R-xp8" id="UlR-hR-Dy1"/>
                 <outlet property="raceLabel" destination="Tym-P4-SYh" id="g0j-Lt-Yct"/>
             </connections>
-            <point key="canvasLocation" x="-277" y="-158"/>
+            <point key="canvasLocation" x="-278.26086956521743" y="-158.03571428571428"/>
         </tableViewCell>
     </objects>
     <resources>

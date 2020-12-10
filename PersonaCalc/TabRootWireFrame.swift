@@ -11,8 +11,9 @@ import UIKit
 
 class TabRootWireFrame {
     
-    static func buildModule() -> UIViewController {
+    static func buildModule() -> UITabBarController {
         let view = UIStoryboard(name: "TabRoot", bundle: nil).instantiateViewController(identifier: "TabRoot") as UITabBarController
+        //view.selectedIndex = 1
         return view
     }
     
