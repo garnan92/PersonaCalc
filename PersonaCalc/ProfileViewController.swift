@@ -22,6 +22,8 @@ class ProfileViewController : UIViewController {
         
         UserDefaults.standard.set("no user", forKey: "user")
         
+        //self.navigationController!.popToRootViewController(animated: true)
+        
         let login = LoginControlelrWireFrame.buildModule()
         login.modalPresentationStyle = .fullScreen
         present(login, animated: true, completion: nil)
